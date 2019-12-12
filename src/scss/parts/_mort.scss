@@ -1,0 +1,72 @@
+.mort {
+    padding: 64px 0;
+
+    &__container {
+
+        &-top {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    &__line {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            padding: 24px;
+            border: 1px solid #C4C8CC;
+        }
+
+        &-name {
+            margin-bottom: 18px;
+            font-weight: 300;
+            font-size: 24px;
+        }
+
+        &-img {
+            width: 304px;
+        }
+
+        &-desc {
+            margin-bottom: 16px;
+            font-weight: 300;
+            font-size: 17px;
+        }
+
+        &-link {
+            font-size: 14px;
+            color: $color-blue;
+            transition: all ease 1s;
+
+            &:hover {
+                color: $color-main;
+            }
+        }
+    }
+
+    &__wrap {
+
+        &-item {
+            padding: 24px;
+            border: 1px solid #C4C8CC;
+        }
+    }
+
+    &__button {
+
+        a {
+            padding: 15px 22px;
+        }
+    }
+}

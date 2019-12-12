@@ -1,0 +1,75 @@
+.services {
+    padding: 64px 0;
+    background-color: $color-lightgrey;
+
+    &__title {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    &__line {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        &-purchase {
+            width: 92px;
+            margin-bottom: 29px;
+        }
+
+        &-switch {
+            width: 71px;
+            margin-bottom: 26px;
+        }
+
+        &-refinance {
+            width: 83px;
+            margin-bottom: 26px;
+        }
+
+        &-renewal {
+            width: 92px;
+            margin-bottom: 29px;
+        }
+
+        &-debt {
+            width: 86px;
+            margin-bottom: 26px;
+        }
+
+        &-name {
+            margin-bottom: 8px;
+            font-weight: 300;
+            font-size: 24px;
+        }
+
+        &-link {
+            
+            a {
+                display: block;
+                font-size: 14px;
+                color: $color-blue;
+
+                &:hover {
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}

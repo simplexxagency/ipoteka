@@ -1,0 +1,86 @@
+body, html {
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto;
+    min-height: 100vh;
+    // overflow-x: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0;
+    background: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+input, select, textarea {
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    line-height: normal;
+}
+
+// --------------------
+
+body {
+    font-family: $font-main;
+    color: $color-main;
+}
+
+.wrapper {
+    max-width: 1300px;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    color: $color-main;
+}
+
+.line {
+
+    div {
+        background-color: $color-blue;
+        width: 64px;
+        height: 3px;
+    }
+}
+
+.text {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.button {
+
+    a {
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,36 @@
+.rates {
+    padding: 64px 0;
+
+    &__title {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    &__line {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            padding: 24px 60px 60px; 
+            border: 1px solid #C4C8CC;
+        }
+
+        &-value {
+            font-weight: 300;
+            font-size: 48px;
+            letter-spacing: -0.02em;
+            color: $color-blue;
+        }
+
+        &-period {
+            font-weight: 300;
+            font-size: 24px;
+        }
+    }
+}

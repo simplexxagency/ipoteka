@@ -1,0 +1,30 @@
+.about {
+    padding: 64px 0;
+
+    &__title {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    &__line {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            width: 610px;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
