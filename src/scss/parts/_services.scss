@@ -8,14 +8,14 @@
     }
 
     &__line {
-        margin-bottom: 32px;
+        margin-bottom: 42px;
         display: flex;
         justify-content: center;
     }
 
     &__box {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
 
         &-item {
@@ -29,28 +29,28 @@
         }
 
         &-purchase {
-            width: 92px;
-            margin-bottom: 29px;
+            width: 97px;
+            margin-bottom: 28px;
         }
 
         &-switch {
-            width: 71px;
+            width: 72px;
             margin-bottom: 26px;
         }
 
         &-refinance {
-            width: 83px;
-            margin-bottom: 26px;
+            width: 84px;
+            margin-bottom: 25px;
         }
 
         &-renewal {
-            width: 92px;
-            margin-bottom: 29px;
+            width: 96px;
+            margin-bottom: 30px;
         }
 
         &-debt {
             width: 86px;
-            margin-bottom: 26px;
+            margin-bottom: 25px;
         }
 
         &-name {
@@ -69,6 +69,38 @@
                 &:hover {
                     color: $color-main;
                 }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .services {
+
+        &__box {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-item {
+                width: 50%;
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
+                
+            }
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .services {
+
+        &__box {
+
+            &-item {
+                width: 100%;
             }
         }
     }

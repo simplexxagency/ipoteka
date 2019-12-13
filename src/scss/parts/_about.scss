@@ -23,7 +23,19 @@
             text-align: center;
 
             &:not(:last-child) {
-                margin-bottom: 20px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .about {
+
+        &__text {
+
+            p {
+                width: 100%;
             }
         }
     }

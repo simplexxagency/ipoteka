@@ -11,6 +11,10 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap" rel="stylesheet">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <!-- Bootstrap -->
@@ -29,251 +33,386 @@
 <body>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="container-fluid">
             <div class="hero__container">
-                <div class="hero__top">
-                    <div class="hero__top-left">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    +1(778) 836-6461
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:iryna.rudavska@ipoteka.ca">iryna.rudavska@ipoteka.ca</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Mon-Fri: 8am - 7pm
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="hero__top-right">
-                        <div class="hero__top-media">
+                <div class="hero__desctop d-none d-lg-block">
+                    <div class="hero__top">
+                        <div class="hero__top-left">
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <img src="img/youtube-fill.svg" alt="icon">
+                                        +1(778) 836-6461
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img src="img/twitter-fill (1).svg" alt="icon">
-                                    </a>
+                                    <a href="mailto:iryna.rudavska@ipoteka.ca">iryna.rudavska@ipoteka.ca</a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="img/facebook-box-fill.svg" alt="icon">
+                                        Mon-Fri: 8am - 7pm
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="img/linkedin-box-fill.svg" alt="icon">
-                                    </a>
+
                                 </li>
                             </ul>
                         </div>
-                        <div class="hero__top-lang">
-                            <div class="hero__lang-eng active">English
-                                <span class="hero__lang-tooltip">Русский</span>
-                            </div>
-                            <div class="hero__lang-ru">Русский
-                                <span class="hero__lang-tooltip">English</span>
-                            </div>
-                        </div>
-                        <div class="hero__top-button">
-                            <a href="#">
-                                Apply Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__main">
-                    <div class="hero__main-header">
-                        <div class="hero__main-logo">
-                            <img src="img/hero-logo.png" alt="image">
-                        </div>
-                        <div class="hero__main-nav">
-                            <ul class="hero__main-list">
-                                <li class="hero__main-item">
-                                    <a href="#" class="hero__main-link">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="hero__main-item">
-                                    <a href="#" class="hero__main-link">
-                                        About
-                                    </a>
-                                </li>
-                                <li class="hero__main-item">
-                                    <a href="#" class="hero__main-link">
-                                        Services
-                                    </a>
-                                </li>
-                                <li class="hero__main-item">
-                                    <a href="#" class="hero__main-link">
-                                        Mortgage
-                                    </a>
-                                </li>
-                                <li class="hero__main-item">
-                                    <a href="#" class="hero__main-link">
-                                        Videos
-                                    </a>
-                                </li>
-                                <li class="hero__main-item">
-                                    <a href="#" class="hero__main-link">
-                                        Blog
-                                    </a>
-                                </li>
-                                <li class="hero__main-item">
-                                    <a href="#" class="hero__main-link">
-                                        Contact
-                                    </a>
-                                </li>
-                                <li class="hero__main-item">
-                                    <a href="#" class="hero__main-link">
-                                        <img src="img/hero-search.svg" alt="icon">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="hero__main-desc">
-                        <div class="hero__main-subtitle">
-                            Iryna Rudavska
-                        </div>
-                        <div class="hero__main-title">
-                            Top performing
-                            Mortgage
-                            Broker
-                        </div>
-                    </div>
-                    <div class="hero__main-form form">
-                        <div class="hero__main-box">
-                            <div class="form__title">
-                                Get Pre-Approved in 60 seconds
-                            </div>
-                            <form action="#">
-                                <div class="form__item">
-                                    <div class="form__item-wrap">
-                                        <label for="amount">Mortgage Amount *</label>
-                                        <input type="text" id='amount' required>
-                                    </div>
-                                    <div class="form__item-wrap">
-                                        <label for="income">Household Income *</label>
-                                        <input type="text" id='income' required>
-                                    </div>
-                                </div>
-                                <div class="form__item">
-                                    <div class="form__item-wrap">
-                                        <label for="rating">Credit Rating</label>
-                                        <select name="" id="rating">
-                                            <option value="excellent" selected>Excellent</option>
-                                            <option value="notbad">Not bad</option>
-                                            <option value="bad">Bad</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__item-wrap">
-                                        <label for="type">Mortgage Type *</label>
-                                        <select name="" id="type" required>
-                                            <option value=""></option>
-                                            <option value="excellent">Excellent</option>
-                                            <option value="notbad">Not bad</option>
-                                            <option value="bad">Bad</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form__item">
-                                    <div class="form__item-wrap">
-                                        <label for="phone">Phone</label>
-                                        <input type="text" id='phone'>
-                                    </div>
-                                    <div class="form__item-wrap">
-                                        <label for="email">E-mail *</label>
-                                        <input type="text" id='email' required>
-                                    </div>
-                                </div>
-                                <div class="form__item">
-                                    <div class="form__item-wrap">
-                                        <label for="name">Name *</label>
-                                        <input type="text" id='name' required>
-                                    </div>
-                                    <div class="form__item-wrap">
-                                        <div class="form__button">
-                                            <input type="submit" value="send">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Header -->
-                <header class="header">
-                    <div class="container-fluid">
-                        <div class="header__container">
-                            <div class="header__logo">
-                                <img src="img/header-logo.png" alt="logo">
-                            </div>
-                            <div class="header__nav">
+                        <div class="hero__top-right">
+                            <div class="hero__top-media">
                                 <ul>
                                     <li>
                                         <a href="#">
+                                            <img src="img/youtube-fill.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/twitter-fill (1).svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/facebook-box-fill.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/linkedin-box-fill.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hero__top-lang">
+                                <div class="hero__lang-eng active">English
+                                    <span class="hero__lang-tooltip">Русский</span>
+                                </div>
+                                <div class="hero__lang-ru">Русский
+                                    <span class="hero__lang-tooltip">English</span>
+                                </div>
+                            </div>
+                            <div class="hero__top-button button">
+                                <a href="#">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__main">
+                        <div class="hero__main-header">
+                            <div class="hero__main-logo">
+                                <img src="img/hero-logo.png" alt="image">
+                            </div>
+                            <div class="hero__main-nav">
+                                <ul class="hero__main-list">
+                                    <li class="hero__main-item">
+                                        <a href="#hero" class="hero__main-link">
                                             Home
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
+                                    <li class="hero__main-item">
+                                        <a href="#about" class="hero__main-link">
                                             About
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
+                                    <li class="hero__main-item">
+                                        <a href="#services" class="hero__main-link">
                                             Services
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
+                                    <li class="hero__main-item">
+                                        <a href="#mortgage" class="hero__main-link">
                                             Mortgage
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
+                                    <li class="hero__main-item">
+                                        <a href="#videos" class="hero__main-link">
                                             Videos
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
+                                    <li class="hero__main-item">
+                                        <a href="#blog" class="hero__main-link">
                                             Blog
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
+                                    <li class="hero__main-item">
+                                        <a href="#contact" class="hero__main-link">
                                             Contact
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
+                                    <li class="hero__main-item">
+                                        <a href="javascript:void(0)" class="hero__main-link">
                                             <img src="img/hero-search.svg" alt="icon">
-                                        </a>
-                                    </li>
-                                    <li class="hero__top-button">
-                                        <a href="#">
-                                            Apply Now
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </header>
-                <!-- End Header -->
+                        <div class="hero__main-desc">
+                            <div class="hero__main-subtitle">
+                                Iryna Rudavska
+                            </div>
+                            <div class="hero__main-title">
+                                Top performing
+                                Mortgage
+                                Broker
+                            </div>
+                        </div>
+                        <div class="hero__main-form form">
+                            <div class="hero__main-box">
+                                <div class="form__title">
+                                    Get Pre-Approved in 60 seconds
+                                </div>
+                                <form action="#">
+                                    <div class="form__item">
+                                        <div class="form__item-wrap">
+                                            <label for="amount">Mortgage Amount *</label>
+                                            <input type="text" id='amount' required>
+                                        </div>
+                                        <div class="form__item-wrap">
+                                            <label for="income">Household Income *</label>
+                                            <input type="text" id='income' required>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__item-wrap">
+                                            <label for="rating">Credit Rating</label>
+                                            <select name="" id="rating">
+                                                <option value="excellent" selected>Excellent</option>
+                                                <option value="notbad">Not bad</option>
+                                                <option value="bad">Bad</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__item-wrap">
+                                            <label for="type">Mortgage Type *</label>
+                                            <select name="" id="type" required>
+                                                <option value=""></option>
+                                                <option value="excellent">Excellent</option>
+                                                <option value="notbad">Not bad</option>
+                                                <option value="bad">Bad</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__item-wrap">
+                                            <label for="phone">Phone</label>
+                                            <input type="text" id='phone'>
+                                        </div>
+                                        <div class="form__item-wrap">
+                                            <label for="email">E-mail *</label>
+                                            <input type="text" id='email' required>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__item-wrap">
+                                            <label for="name">Name *</label>
+                                            <input type="text" id='name' required>
+                                        </div>
+                                        <div class="form__item-wrap">
+                                            <div class="form__button">
+                                                <input type="submit" value="send">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
 
+                        </div>
+                    </div>
+
+                    <!-- Header -->
+                    <header class="header">
+                        <div class="container-fluid">
+                            <div class="header__container">
+                                <div class="header__logo">
+                                    <img src="img/header-logo.png" alt="logo">
+                                </div>
+                                <div class="header__nav">
+                                    <ul>
+                                        <li>
+                                            <a href="#hero">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#about">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#services">
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#mortgage">
+                                                Mortgage
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#videos">
+                                                Videos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#blog">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">
+                                                Contact
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <img src="img/hero-search.svg" alt="icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="header__top-link">
+                                                Apply Now
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- End Header -->
+                </div>
+
+
+                <div class="hero__mobile d-block d-lg-none">
+                    <div class="hero__mobile-header">
+                        <div class="hero__mobile-wrap">
+                            <div class="hero__mobile-logo">
+                                <img src="img/header-logo.png" alt="image">
+                            </div>
+                            <div class="hero__mobile-btn d-flex align-items-center d-xl-none">
+                                <div class="hero__mobile-icon">
+                                    <div class="hero__mobile-line"></div>
+                                    <div class="hero__mobile-line"></div>
+                                    <div class="hero__mobile-line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero__mobile-menu d-xl-none">
+                            <ul class="hero__mobile-list">
+                                <li class="hero__mobile-item">
+                                    <a href="#hero">Home</a>
+                                </li>
+                                <li class="hero__mobile-item">
+                                    <a href="#about">About</a>
+                                </li>
+                                <li class="hero__mobile-item">
+                                    <a href="#services">Services</a>
+                                </li>
+                                <li class="hero__mobile-item">
+                                    <a href="#mortgage">Mortgage</a>
+                                </li>
+                                <li class="hero__mobile-item">
+                                    <a href="#videos">Videos</a>
+                                </li>
+                                <li class="hero__mobile-item">
+                                    <a href="#blog">Blog</a>
+                                </li>
+                                <li class="hero__mobile-item">
+                                    <a href="#contact">Contact</a>
+                                </li>
+                                <li class="hero__mobile-item">
+                                    <a href="javascript:void(0)" class="hero__mobile-search">
+                                        <img src="img/hero-search.svg" alt="icon">
+                                    </a>
+                                </li>
+                                <li class="hero__mobile-item">
+                                    <div class="hero__mobile-button">
+                                        <a href="javascript:void(0)">
+                                            Apply now
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hero__mobile-main">
+                        <div class="hero__mobile-desc">
+                            <div class="hero__mobile-subtitle">
+                                Iryna Rudavska
+                            </div>
+                            <div class="hero__mobile-title">
+                                Top performing
+                                Mortgage
+                                Broker
+                            </div>
+                        </div>
+                        <div class="hero__mobile-img">
+                            <img src="img/hero-bg.png" alt="image">
+                        </div>
+                        <div class="hero__mobile-form form">
+                            <div class="hero__mobile-box">
+                                <div class="form__title">
+                                    Get Pre-Approved in 60 seconds
+                                </div>
+                                <form action="#">
+                                    <div class="form__item">
+                                        <div class="form__item-wrap">
+                                            <label for="amount2">Mortgage Amount *</label>
+                                            <input type="text" id='amount2' required>
+                                        </div>
+                                        <div class="form__item-wrap">
+                                            <label for="income2">Household Income *</label>
+                                            <input type="text" id='income2' required>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__item-wrap">
+                                            <label for="rating2">Credit Rating</label>
+                                            <select name="" id="rating2">
+                                                <option value="excellent" selected>Excellent</option>
+                                                <option value="notbad">Not bad</option>
+                                                <option value="bad">Bad</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__item-wrap">
+                                            <label for="type2">Mortgage Type *</label>
+                                            <select name="" id="type2" required>
+                                                <option value=""></option>
+                                                <option value="excellent">Excellent</option>
+                                                <option value="notbad">Not bad</option>
+                                                <option value="bad">Bad</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__item-wrap">
+                                            <label for="phone2">Phone</label>
+                                            <input type="text" id='phone2'>
+                                        </div>
+                                        <div class="form__item-wrap">
+                                            <label for="email2">E-mail *</label>
+                                            <input type="text" id='email2' required>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__item-wrap">
+                                            <label for="name2">Name *</label>
+                                            <input type="text" id='name2' required>
+                                        </div>
+                                        <div class="form__item-wrap">
+                                            <div class="form__button">
+                                                <input type="submit" value="send">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -283,7 +422,7 @@
     <main>
 
         <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__container">
                     <div class="about__title title">
@@ -309,7 +448,7 @@
 
 
         <!-- Video -->
-        <section class="video">
+        <section class="video" id="video">
             <div class="container">
                 <div class="video__container">
                     <div class="video__title title">
@@ -337,7 +476,7 @@
         <!-- End Video -->
 
         <!-- Rates -->
-        <section class="rates">
+        <section class="rates" id="rates">
             <div class="container">
                 <div class="rates__container">
                     <div class="rates__title title">
@@ -386,7 +525,7 @@
         <!-- End Rates -->
 
         <!-- Services -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services__container">
                     <div class="services__title title">
@@ -398,7 +537,7 @@
                     <div class="services__box">
                         <div class="services__box-item">
                             <div class="services__box-purchase">
-                                <img src="img/loan-1.svg" alt="icon">
+                                <img src="img/services-icon-1.svg" alt="icon">
                             </div>
                             <div class="services__box-name">
                                 Purchase
@@ -409,7 +548,7 @@
                         </div>
                         <div class="services__box-item">
                             <div class="services__box-switch">
-                                <img src="img/interest-1.svg" alt="icon">
+                                <img src="img/services-icon-2.svg" alt="icon">
                             </div>
                             <div class="services__box-name">
                                 Direct Switch
@@ -420,7 +559,7 @@
                         </div>
                         <div class="services__box-item">
                             <div class="services__box-refinance">
-                                <img src="img/transfer-1.svg" alt="icon">
+                                <img src="img/services-icon-3.svg" alt="icon">
                             </div>
                             <div class="services__box-name">
                                 Refinance
@@ -431,7 +570,7 @@
                         </div>
                         <div class="services__box-item">
                             <div class="services__box-renewal">
-                                <img src="img/mortgage-1.svg" alt="icon">
+                                <img src="img/services-icon-4.svg" alt="icon">
                             </div>
                             <div class="services__box-name">
                                 Renewal
@@ -442,7 +581,7 @@
                         </div>
                         <div class="services__box-item">
                             <div class="services__box-debt">
-                                <img src="img/calendar-1.svg" alt="icon">
+                                <img src="img/services-icon-5.svg" alt="icon">
                             </div>
                             <div class="services__box-name">
                                 Debt Consolidation
@@ -458,180 +597,217 @@
         <!-- End Services -->
 
         <!-- Mort -->
-        <section class="mort">
+        <section class="mort" id="mortgage">
             <div class="container">
                 <div class="mort__container">
                     <div class="mort__container-top">
-                        <div class="mort__title">
+                        <div class="mort__title title">
                             Mortgage Information
                         </div>
                         <div class="mort__line line">
+                            <div></div>
+                        </div>
+                        <div class="mort__box row">
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__box-item">
+                                    <div class="mort__box-name">
+                                        Mortgage for First Home Buyer
+                                    </div>
+                                    <div class="mort__box-img">
+                                        <img src="img/mort-img-1.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__box-item">
+                                    <div class="mort__box-name">
+                                        Mortgage for New Immigrants
+                                    </div>
+                                    <div class="mort__box-img">
+                                        <img src="img/mort-img-2.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__box-item">
+                                    <div class="mort__box-name">
+                                        Mortgage with Bad Credit Score
+                                    </div>
+                                    <div class="mort__box-img">
+                                        <img src="img/mort-img-3.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__box-item">
+                                    <div class="mort__box-name">
+                                        Mortgage for First Home Buyer
+                                    </div>
+                                    <div class="mort__box-img">
+                                        <img src="img/mort-img-4.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__box-item">
+                                    <div class="mort__box-name">
+                                        Mortgage for New Immigrants
+                                    </div>
+                                    <div class="mort__box-img">
+                                        <img src="img/mort-img-5.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__box-item">
+                                    <div class="mort__box-name">
+                                        Mortgage with Bad Credit Score
+                                    </div>
+                                    <div class="mort__box-img">
+                                        <img src="img/mort-img-6.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
-                        <div class="mort__box">
-                            <div class="mort__box-item">
-                                <div class="mort__box-name">
-                                    Mortgage for First Home Buyer
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-1.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="mort__box-item">
-                                <div class="mort__box-name">
-                                    Mortgage for New Immigrants
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-2.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="mort__box-item">
-                                <div class="mort__box-name">
-                                    Mortgage with Bad Credit Score
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-3.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="mort__box-item">
-                                <div class="mort__box-name">
-                                    Mortgage for First Home Buyer
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-4.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="mort__box-item">
-                                <div class="mort__box-name">
-                                    Mortgage for New Immigrants
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-5.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="mort__box-item">
-                                <div class="mort__box-name">
-                                    Mortgage with Bad Credit Score
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-6.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="mort__container-bottom">
-                        <div class="mort__title">
+                    <div class="mort__container-bottom" id="blog">
+                        <div class="mort__title title">
                             From the blog
                         </div>
                         <div class="mort__line line">
                             <div></div>
                         </div>
-                        <div class="mort__wrap">
-                            <div class="mort__wrap-item">
-                                <div class="mort__box-name">
-                                    Mortgage for First Home Buyer
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-1.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="mort__wrap-item">
-                                <div class="mort__box-name">
-                                    Mortgage for First Home Buyer
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-1.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
+                        <div class="mort__wrap row">
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__wrap-item">
+                                    <div class="mort__wrap-img">
+                                        <img src="img/mort-img-1.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-name">
+                                            Mortgage for First Home Buyer
+                                        </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mort__wrap-item">
-                                <div class="mort__box-name">
-                                    Mortgage for First Home Buyer
-                                </div>
-                                <div class="mort__box-img">
-                                    <img src="img/mort-img-1.png" alt="image">
-                                </div>
-                                <div class="mort__box-desc">
-                                    Put yourself on the path towards home ownership with helpful tools and information
-                                    while you dream and shop.
-                                </div>
-                                <div class="mort__box-link">
-                                    <a href="#">
-                                        Learn more
-                                    </a>
+
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__wrap-item">
+                                    <div class="mort__wrap-img">
+                                        <img src="img/mort-img-1.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-name">
+                                            Mortgage for First Home Buyer
+                                        </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="col-auto col-12 col-md-6 col-lg-4">
+                                <div class="mort__wrap-item">
+                                    
+                                    <div class="mort__wrap-img">
+                                        <img src="img/mort-img-1.png" alt="image">
+                                    </div>
+                                    <div class="mort__box-name">
+                                            Mortgage for First Home Buyer
+                                        </div>
+                                    <div class="mort__box-desc">
+                                        Put yourself on the path towards home ownership with helpful tools and
+                                        information
+                                        while you dream and shop.
+                                    </div>
+                                    <div class="mort__box-link">
+                                        <a href="#">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="mort__button button">
                             <a href="#">
@@ -648,7 +824,7 @@
         <section class="test">
             <div class="container">
                 <div class="test__container">
-                    <div class="test__title">
+                    <div class="test__title title">
                         Testimonials
                     </div>
                     <div class="test__line line">
@@ -666,7 +842,7 @@
                                     <div class="test__card-quote">
                                         "
                                     </div>
-                                    <div class="test__card-text">
+                                    <div class="test__card-text text">
                                         Hello guys, I wanted to thank you too for everything you did for us and for the
                                         great rates you’ve found us. We’re now at our new place and very happy. We were
                                         moving yesterday all day until 4 am today, but definitely worth it. We’re going
@@ -691,7 +867,7 @@
                                     <div class="test__card-quote">
                                         "
                                     </div>
-                                    <div class="test__card-text">
+                                    <div class="test__card-text text">
                                         Hello guys, I wanted to thank you too for everything you did for us and for the
                                         great rates you’ve found us. We’re now at our new place and very happy. We were
                                         moving yesterday all day until 4 am today, but definitely worth it. We’re going
@@ -716,7 +892,7 @@
                                     <div class="test__card-quote">
                                         "
                                     </div>
-                                    <div class="test__card-text">
+                                    <div class="test__card-text text">
                                         Hello guys, I wanted to thank you too for everything you did for us and for the
                                         great rates you’ve found us. We’re now at our new place and very happy. We were
                                         moving yesterday all day until 4 am today, but definitely worth it. We’re going
@@ -741,7 +917,7 @@
                                     <div class="test__card-quote">
                                         "
                                     </div>
-                                    <div class="test__card-text">
+                                    <div class="test__card-text text">
                                         Hello guys, I wanted to thank you too for everything you did for us and for the
                                         great rates you’ve found us. We’re now at our new place and very happy. We were
                                         moving yesterday all day until 4 am today, but definitely worth it. We’re going
@@ -766,7 +942,7 @@
                                     <div class="test__card-quote">
                                         "
                                     </div>
-                                    <div class="test__card-text">
+                                    <div class="test__card-text text">
                                         Hello guys, I wanted to thank you too for everything you did for us and for the
                                         great rates you’ve found us. We’re now at our new place and very happy. We were
                                         moving yesterday all day until 4 am today, but definitely worth it. We’re going
@@ -791,7 +967,7 @@
                                     <div class="test__card-quote">
                                         "
                                     </div>
-                                    <div class="test__card-text">
+                                    <div class="test__card-text text">
                                         Hello guys, I wanted to thank you too for everything you did for us and for the
                                         great rates you’ve found us. We’re now at our new place and very happy. We were
                                         moving yesterday all day until 4 am today, but definitely worth it. We’re going
@@ -825,8 +1001,366 @@
             </div>
         </section>
         <!-- End Test -->
+
+        <!-- Questions -->
+        <section class="quest">
+            <div class="container">
+                <div class="quest__container">
+                    <div class="quest__title title">
+                        Mortgage questions
+                    </div>
+                    <div class="quest__line line">
+                        <div></div>
+                    </div>
+                    <div class="quest__form">
+                        <form action="#">
+                            <div class="quest__form-top row">
+                                <div class="col-auto col-12 col-md-6 col-lg-4">
+                                    <div class="quest__form-item">
+                                        <label for="q-name">
+                                            Your Name *
+                                        </label>
+                                        <input type="text" id="q-name" required>
+                                    </div>
+                                </div>
+                                <div class="col-auto col-12 col-md-6 col-lg-4">
+                                    <div class="quest__form-item">
+                                        <label for="q-email">
+                                            Your Email *
+                                        </label>
+                                        <input type="text" id="q-email" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto col-12 col-md-6 col-lg-4">
+                                    <div class="quest__form-item">
+                                        <label for="q-phone">
+                                            Phone
+                                        </label>
+                                        <input type="text" class="phone" id="q-phone">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="quest__form-main">
+                                <label for="question">
+                                    Question *
+                                </label>
+                                <textarea name="" id="question"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="quest__button button">
+                        <a href="#">Send</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Questions- -->
     </main>
     <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__title title">
+                    Cities We Serve
+                </div>
+                <div class="footer__line">
+                    <div></div>
+                </div>
+                <div class="footer__cities row">
+                    <div class="footer__cities-item col-auto col-12 col-sm-6 col-lg-3">
+                        <ul>
+                            <li>
+                                Burnaby
+                            </li>
+                            <li>
+                                Coal Harbor
+                            </li>
+                            <li>
+                                False Creek
+                            </li>
+                            <li>
+                                Ladner
+                            </li>
+                            <li>
+                                Mount Pleasant
+                            </li>
+                            <li>
+                                Richmond
+                            </li>
+                            <li>
+                                Squarmish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__cities-item col-auto col-12 col-sm-6 col-lg-3">
+                        <ul>
+                            <li>
+                                Surrey
+                            </li>
+                            <li>
+                                Vancouver
+                            </li>
+                            <li>
+                                White Rock
+                            </li>
+                            <li>
+                                Chilliwack
+                            </li>
+                            <li>
+                                Coquitlam
+                            </li>
+                            <li>
+                                Kerrisdale
+                            </li>
+                            <li>
+                                UBC
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__cities-item col-auto col-12 col-sm-6 col-lg-3">
+                        <ul>
+                            <li>
+                                Langley
+                            </li>
+                            <li>
+                                North Vancouver
+                            </li>
+                            <li>
+                                Shaughnessy
+                            </li>
+                            <li>
+                                Tsawwassen
+                            </li>
+                            <li>
+                                West End
+                            </li>
+                            <li>
+                                Yaletown
+                            </li>
+                            <li>
+                                West Vancouver
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__cities-item col-auto col-12 col-sm-6 col-lg-3">
+                        <ul>
+                            <li>
+                                Cloverdale
+                            </li>
+                            <li>
+                                Coal Harbor
+                            </li>
+                            <li>
+                                Delta
+                            </li>
+                            <li>
+                                Kitsilano
+                            </li>
+                            <li>
+                                Maple Ridge
+                            </li>
+                            <li>
+                                Port Moody
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__main">
+                    <div class="footer__main-item">
+                        <div class="footer__main-title">
+                            About
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About-us new
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Testimonials
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Why&#160;use&#160;a&#160;Mortgage Broker
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Charity
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__main-item">
+                        <div class="footer__main-title">
+                            Services
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Purchase
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Renewal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Refinance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Direct Switch
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Debt&#160;Consolidation
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__main-item">
+                        <div class="footer__main-title">
+                            Mortgage Info
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Mortgage for First
+                                    Home Buyer
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mortgage for New
+                                    Immigrants
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mortgage for Self
+                                    Employed Individuals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mortgage with Bad
+                                    Credit Score
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Private Mortgage
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mortgage for Real
+                                    Estate Investors
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__main-item footer__main-itemsmall">
+                        <div class="footer__main-title">
+                            Contacts
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    +1(778) 836-6461
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                        iryna.rudavska@ipoteka.ca
+                                        
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+
+                                    3989 Henning Dr. Unit #105
+                                    Burnaby, BC V5C 6P8
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mon - Fri: 8am - 7pm
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__main-item">
+                        <div class="footer__main-title">
+                            Follow us
+                        </div>
+                        <div class="footer__main-media">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/youtube-fill.svg" alt="icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/twitter-fill (1).svg" alt="icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/facebook-box-fill.svg" alt="icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/linkedin-box-fill.svg" alt="icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__form">
+                            <form action="#">
+                                <label for="f-email">
+                                    Subscribe
+                                </label>
+                                <input type="text" id="f-email">
+                                <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__copyright">
+                        2019 Ipoteka Mortgage Inc. © 2019 All Rights Reserved. Website by EFC Marketing
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 
 
     <!-- Bootstrap -->

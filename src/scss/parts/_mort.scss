@@ -4,7 +4,7 @@
     &__container {
 
         &-top {
-            margin-bottom: 80px;
+            margin-bottom: 49px;
         }
     }
 
@@ -23,8 +23,13 @@
         display: flex;
         flex-wrap: wrap;
 
+        &>div {
+            margin-bottom: 32px;
+        }
+
         &-item {
-            padding: 24px;
+            min-height: 100%;
+            padding: 34px 22px 32px;
             border: 1px solid #C4C8CC;
         }
 
@@ -32,16 +37,18 @@
             margin-bottom: 18px;
             font-weight: 300;
             font-size: 24px;
+            line-height: 31px;
         }
 
         &-img {
-            width: 304px;
+            margin-bottom: 23px;
         }
 
         &-desc {
             margin-bottom: 16px;
             font-weight: 300;
             font-size: 17px;
+            line-height: 26px;
         }
 
         &-link {
@@ -56,17 +63,38 @@
     }
 
     &__wrap {
+        margin-bottom: 40px;
 
         &-item {
-            padding: 24px;
+            min-height: 100%;
+            padding: 24px 24px 31px;
             border: 1px solid #C4C8CC;
+        }
+
+        &-img {
+            margin-bottom: 27px;
         }
     }
 
     &__button {
+        display: flex;
+        justify-content: center;
 
         a {
             padding: 15px 22px;
+            display: inline-block;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .mort {
+
+        &__wrap {
+
+            &>div {
+                margin-bottom: 30px;
+            }
         }
     }
 }

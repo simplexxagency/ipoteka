@@ -70,17 +70,34 @@ body {
 
 .text {
     font-weight: 300;
+    line-height: 26px;
     font-size: 17px;
+
+    p {
+        font-weight: 300;
+    }
 }
 
 .button {
 
     a {
+        display: inline-block;
         font-size: 16px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #FFFFFF;
         background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
         border-radius: 4px;
+
+        &:hover {
+            background: $color-blue;
+            color: #fff;
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .title {
+        font-size: 32px;
     }
 }

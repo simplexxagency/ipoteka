@@ -41,9 +41,15 @@
                 width: 100%;
                 font-size: 16px;
                 color: #fff;
+                background: url('../../img/arrow-down-s-fill.svg') right center no-repeat;
                 background-color: rgba(255, 255, 255, 0.1);
                 border: 1px solid rgba(255, 255, 255, 0.4);
                 border-radius: 2px;
+            }
+
+            option {
+                color: $color-main;
+                background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
             }
         }
     }
@@ -60,6 +66,40 @@
             color: #fff;
             background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
             border-radius: 4px;
+
+            &:hover {
+                background: $color-blue;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .form {
+
+        &__item {
+            flex-direction: column;
+
+            &-wrap {
+                width: 100%;
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        &__button {
+            input {
+                background: $color-yellow;
+                border: 1px solid transparent;
+
+                &:hover {
+                    transition: all ease 1s;
+                    background: $color-blue;
+                    border: 1px solid #fff;
+                }
+            }
         }
     }
 }
