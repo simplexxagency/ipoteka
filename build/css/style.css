@@ -292,6 +292,96 @@ body {
       background: #157BC0;
       border: 1px solid #fff; } }
 
+.header-main.active {
+  display: block;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.08);
+  box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.08);
+  opacity: 1;
+  -webkit-transition: opacity ease 2s;
+  -o-transition: opacity ease 2s;
+  transition: opacity ease 2s;
+  -webkit-animation: opacity ease 2s;
+  animation: opacity ease 2s; }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.header__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .header__container.active {
+    position: fixed;
+    padding: 0 15px;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.08);
+    box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.08);
+    opacity: 1;
+    -webkit-transition: opacity ease 2s;
+    -o-transition: opacity ease 2s;
+    transition: opacity ease 2s;
+    -webkit-animation: opacity ease 2s;
+    animation: opacity ease 2s; }
+
+.header__logo {
+  width: 115px; }
+
+.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header__nav li:not(:last-child) {
+  margin-right: 30px; }
+
+.header__nav a {
+  font-size: 18px;
+  text-decoration: none; }
+  .header__nav a img {
+    -webkit-filter: brightness(0) saturate(100%) invert(11%) sepia(25%) saturate(493%) hue-rotate(172deg) brightness(96%) contrast(91%);
+    filter: brightness(0) saturate(100%) invert(11%) sepia(25%) saturate(493%) hue-rotate(172deg) brightness(96%) contrast(91%); }
+  .header__nav a:hover {
+    color: #157BC0; }
+
+.header a.header__top-link {
+  display: block;
+  padding: 15px 66px;
+  font-size: 14px;
+  color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#42ABE0), to(#157BC0));
+  background: -webkit-linear-gradient(right, #42ABE0 0%, #157BC0 100%);
+  background: -o-linear-gradient(right, #42ABE0 0%, #157BC0 100%);
+  background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%); }
+
 .hero {
   margin: 0 -15px; }
   .hero__top {
@@ -666,67 +756,6 @@ body {
     width: 350px;
     font-size: 48px;
     letter-spacing: -0.02em; }
-
-.header {
-  display: none; }
-  .header.active {
-    display: block;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.08);
-    box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.08);
-    opacity: 1;
-    -webkit-transition: opacity ease 2s;
-    -o-transition: opacity ease 2s;
-    transition: opacity ease 2s;
-    -webkit-animation: opacity ease 2s;
-    animation: opacity ease 2s; }
-
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes opacity {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-  .header__container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .header__logo {
-    width: 115px; }
-  .header__nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .header__nav li:not(:last-child) {
-    margin-right: 30px; }
-  .header__nav a {
-    font-size: 18px;
-    text-decoration: none; }
-    .header__nav a img {
-      -webkit-filter: brightness(0) saturate(100%) invert(11%) sepia(25%) saturate(493%) hue-rotate(172deg) brightness(96%) contrast(91%);
-      filter: brightness(0) saturate(100%) invert(11%) sepia(25%) saturate(493%) hue-rotate(172deg) brightness(96%) contrast(91%); }
-    .header__nav a:hover {
-      color: #157BC0; }
 
 @media all and (max-width: 1199px) {
   .hero__main-form {

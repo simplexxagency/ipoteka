@@ -18,13 +18,15 @@ $(document).ready(function () {
   });
 
   // Header bg color
-  let $header = $('.header');
+  let $headerMain = $('.header-main');
+  let $header = $('.header__container');
   let $hero = $('.hero');
 
   $(window).scroll(function () {
       let top = $(this).scrollTop();
 
-      $header.toggleClass('active', top > ($hero.height() * 0.15));
+      $header.toggleClass('active', top > $header.height());
+      $headerMain.toggleClass('active', top > ($hero.height() * 0.15));
   });
 
   // Menu in Header

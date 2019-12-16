@@ -134,7 +134,7 @@
         &-tooltip {
             visibility: hidden;
             position: absolute;
-            top: 60%;
+            top: 80%;
             left: 100%;
             margin-left: -60px;
             width: 85px;
@@ -435,74 +435,7 @@
     }
 }
 
-.header {
-    display: none;
-    
-    &.active {
-        display: block;
-        position: fixed;
-        z-index: 5;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.08);
-        opacity: 1;
-        transition: opacity ease 2s;
-        animation: opacity ease 2s;
-    }
 
-    @keyframes opacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-
-        }
-    }
-
-    &__container {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__logo {
-        width: 115px;
-    }
-
-    &__nav {
-
-        ul {
-            display: flex;
-            align-items: center;
-        }
-
-        li {
-
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
-        }
-
-        a {
-            font-size: 18px;
-            text-decoration: none;
-
-            img {
-                filter: brightness(0) saturate(100%) invert(11%) sepia(25%) saturate(493%) hue-rotate(172deg) brightness(96%) contrast(91%);
-
-
-            }
-
-            &:hover {
-                color: $color-blue;
-            }
-        }
-    }
-}
 
 @media all and (max-width: 1199px) {
     .hero {

@@ -6,7 +6,7 @@ $(document).ready(function () {
     // Form Mask
     jQuery(function ($) {
         $('#phone').mask('+9 (999) 999-9999');
-        $('#phone2').mask('+9 (999) 999-9999');
+        $('#q-phone').mask('+9 (999) 999-9999');
     });
 
     // Tooltip in Header
@@ -18,13 +18,15 @@ $(document).ready(function () {
   });
 
   // Header bg color
-  let $header = $('.header');
+  let $headerMain = $('.header-main');
+  let $header = $('.header__container');
   let $hero = $('.hero');
 
   $(window).scroll(function () {
       let top = $(this).scrollTop();
 
-      $header.toggleClass('active', top > ($hero.height() * 0.15));
+      $header.toggleClass('active', top > $header.height());
+      $headerMain.toggleClass('active', top > ($hero.height() * 0.15));
   });
 
   // Menu in Header
