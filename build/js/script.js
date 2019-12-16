@@ -27,13 +27,23 @@ $(document).ready(function () {
     if ($heroSearch.hasClass('active')) {
       $heroSearch.removeClass('active');
       $heroFade.addClass('active');
+    } else {
+      $heroSearch.addClass('active');
+      $heroFade.removeClass('active');
     }
   });
 
-  $heroSearchInput.on('change', function() {
+  // $heroSearchInput.on('change', function() {
+  //   $heroSearchMenu.addClass('active');
+  // });
+
+  $heroSearchInput.on('input', function() {
     $heroSearchMenu.addClass('active');
-    $heroSearch.addClass('active');
-    $heroFade.removeClass('active');
+    $('.hero__search a').html($heroSearchInput.val());
+
+    $('body').on('click', function() {
+      $heroSearchMenu.removeClass('active');
+    });
   });
 
   // Header bg color
@@ -70,6 +80,24 @@ $(document).ready(function () {
     $('.hero__mobile-menu').removeClass('active');
     $('body').removeClass('active');
   });
+
+
+  // var options = {
+
+  //   url: "resources/countries.json",
+  
+  //   getValue: "name",
+  
+  //   list: {
+  //     match: {
+  //       enabled: true
+  //     }
+  //   },
+  
+  //   theme: "square"
+  // };
+  
+  // $("#countries").easyAutocomplete(options);
 
   // Smooth scroll
   $('a[href^="#"]').click(function () {

@@ -25,7 +25,8 @@
                 }
             }
 
-            a {
+            a, 
+            span {
                 font-size: 14px;
                 color: $color-main;
                 letter-spacing: 0.3px;
@@ -209,6 +210,7 @@
         }
 
         &-list {
+            position: relative;
             display: flex;
         }
 
@@ -442,13 +444,14 @@
     &__search {
         display: none;
         position: absolute;
-        top: 0;
+        width: 100%;
+        top: 35px;
         right: 0;
         z-index: 2;
         padding: 14px;
         font-size: 16px;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.1);
+        color: #20262D;
+        background: #fff;
         border: 1px solid rgba(255, 255, 255, 0.4);
         border-radius: 2px;
 
@@ -461,6 +464,7 @@
             display: none;
 
             &.active {
+                position: relative;
                 display: block;
             }
 
