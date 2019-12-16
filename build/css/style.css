@@ -490,7 +490,7 @@ body {
     .hero__lang-tooltip {
       visibility: hidden;
       position: absolute;
-      top: 60%;
+      top: 80%;
       left: 100%;
       margin-left: -60px;
       width: 85px;

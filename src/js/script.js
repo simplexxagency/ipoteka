@@ -2,13 +2,13 @@
 
 $(document).ready(function () {
 
-    // Form Mask
-    jQuery(function ($) {
-        $('#phone').mask('+9 (999) 999-9999');
-        $('#q-phone').mask('+9 (999) 999-9999');
-    });
+  // Form Mask
+  jQuery(function ($) {
+    $('#phone').mask('+9 (999) 999-9999');
+    $('#q-phone').mask('+9 (999) 999-9999');
+  });
 
-    // Tooltip in Header
+  // Tooltip in Header
   let $langTip = $('.hero__lang-tooltip');
   let $langMenu = $('.hero__top-lang');
 
@@ -22,10 +22,10 @@ $(document).ready(function () {
   let $hero = $('.hero');
 
   $(window).scroll(function () {
-      let top = $(this).scrollTop();
+    let top = $(this).scrollTop();
 
-      $header.toggleClass('active', top > $header.height());
-      $headerMain.toggleClass('active', top > ($hero.height() * 0.15));
+    $header.toggleClass('active', top > $header.height());
+    $headerMain.toggleClass('active', top > ($hero.height() * 0.15));
   });
 
   // Menu in Header
@@ -33,31 +33,31 @@ $(document).ready(function () {
   let $navMenu = $('.hero__mobile-menu');
 
   $('.hero__mobile-btn').on('click', function () {
-      if (!($btn.hasClass('active'))) {
-          $btn.addClass('active');
-          $navMenu.addClass('active');
-          $('body').addClass('active');
-      } else {
-          $btn.removeClass('active');
-          $navMenu.removeClass('active');
-          $('body').removeClass('active');
-      }
+    if (!($btn.hasClass('active'))) {
+      $btn.addClass('active');
+      $navMenu.addClass('active');
+      $('body').addClass('active');
+    } else {
+      $btn.removeClass('active');
+      $navMenu.removeClass('active');
+      $('body').removeClass('active');
+    }
 
   });
 
   $('.hero__mobile-item a').on('click', function () {
-      $('.hero__mobile-line').removeClass('active');
-      $('.hero__mobile-menu').removeClass('active');
-      $('body').removeClass('active');
+    $('.hero__mobile-line').removeClass('active');
+    $('.hero__mobile-menu').removeClass('active');
+    $('body').removeClass('active');
   });
 
   // Smooth scroll
   $('a[href^="#"]').click(function () {
     var target = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
-    $('body'). removeClass('active');
+    $('body').removeClass('active');
     return false;
-});
+  });
 
   // Slick slider in section Test
   function slickifyTest() {
