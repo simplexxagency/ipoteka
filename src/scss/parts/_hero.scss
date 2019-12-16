@@ -1,11 +1,15 @@
 .hero {
-    margin: 0 -15px;
+    // margin: 0 -15px;
+
+    .container-fluid {
+        padding: 0;
+    }
 
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-right: -15px;
+        // margin-right: -15px;
         margin-left: 30px;
 
         &-left {
@@ -209,6 +213,7 @@
         }
 
         &-item {
+            flex-shrink: 0;
 
             &:not(:last-child) {
                 margin-right: 32px;
@@ -433,6 +438,61 @@
             letter-spacing: -0.02em;
         }
     }
+
+    &__search {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        padding: 14px;
+        font-size: 16px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 2px;
+
+        &.active {
+            display: block;
+        }
+
+
+        &-fade {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            input {
+                position: relative;
+                top: -14px;
+                width: 100%;
+                padding: 14px;
+                font-size: 16px;
+                color: #fff;
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-radius: 2px;
+            }
+            
+        }
+
+        li {
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        a {
+
+            &:hover {
+                transition: all ease 1s;
+                color: $color-blue;
+            }
+        }
+    }
 }
 
 
@@ -507,6 +567,7 @@
 
             &-title {
                 font-size: 36px;
+                width: unset;
             }
 
             &-form {

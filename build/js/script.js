@@ -6,6 +6,7 @@ $(document).ready(function () {
   jQuery(function ($) {
     $('#phone').mask('+9 (999) 999-9999');
     $('#q-phone').mask('+9 (999) 999-9999');
+    $('#phone3').mask('+9 (999) 999-9999');
   });
 
   // Tooltip in Header
@@ -14,6 +15,25 @@ $(document).ready(function () {
 
   $langTip.on('click', function () {
     $langMenu.find('div').toggleClass('active');
+  });
+
+  // Search in section Hero
+  let $heroSearch = $('.hero__main-search');
+  let $heroFade = $('.hero__search-fade');
+  let $heroSearchMenu = $('.hero__search');
+  let $heroSearchInput = $('.hero__search-input');
+
+  $heroSearch.on('click', function() {
+    if ($heroSearch.hasClass('active')) {
+      $heroSearch.removeClass('active');
+      $heroFade.addClass('active');
+    }
+  });
+
+  $heroSearchInput.on('change', function() {
+    $heroSearchMenu.addClass('active');
+    $heroSearch.addClass('active');
+    $heroFade.removeClass('active');
   });
 
   // Header bg color
