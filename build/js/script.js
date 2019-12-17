@@ -23,7 +23,7 @@ $(document).ready(function () {
   let $heroSearchMenu = $('.hero__search');
   let $heroSearchInput = $('.hero__search-input');
 
-  $heroSearch.on('click', function() {
+  $heroSearch.on('click', function () {
     if ($heroSearch.hasClass('active')) {
       $heroSearch.removeClass('active');
       $heroFade.addClass('active');
@@ -37,43 +37,43 @@ $(document).ready(function () {
   //   $heroSearchMenu.addClass('active');
   // });
 
-  $heroSearchInput.on('input', function() {
+  $heroSearchInput.on('input', function () {
     $heroSearchMenu.addClass('active');
     $('.hero__search a').html($heroSearchInput.val());
 
-    $('body').on('click', function() {
+    $('body').on('click', function () {
       $heroSearchMenu.removeClass('active');
     });
   });
 
-    // Search in section Header
-    let $headerSearch = $('.header__search-button');
-    let $headerFade = $('.header__search-fade');
-    let $headerSearchMenu = $('.header__search');
-    let $headerSearchInput = $('.header__search-input');
-  
-    $headerSearch.on('click', function() {
-      if ($headerSearch.hasClass('active')) {
-        $headerSearch.removeClass('active');
-        $headerFade.addClass('active');
-      } else {
-        $headerSearch.addClass('active');
-        $headerFade.removeClass('active');
-      }
+  // Search in section Header
+  let $headerSearch = $('.header__search-button');
+  let $headerFade = $('.header__search-fade');
+  let $headerSearchMenu = $('.header__search');
+  let $headerSearchInput = $('.header__search-input');
+
+  $headerSearch.on('click', function () {
+    if ($headerSearch.hasClass('active')) {
+      $headerSearch.removeClass('active');
+      $headerFade.addClass('active');
+    } else {
+      $headerSearch.addClass('active');
+      $headerFade.removeClass('active');
+    }
+  });
+
+  // $heroSearchInput.on('change', function() {
+  //   $heroSearchMenu.addClass('active');
+  // });
+
+  $headerSearchInput.on('input', function () {
+    $headerSearchMenu.addClass('active');
+    $('.header__search a').html($headerSearchInput.val());
+
+    $('body').on('click', function () {
+      $headerSearchMenu.removeClass('active');
     });
-  
-    // $heroSearchInput.on('change', function() {
-    //   $heroSearchMenu.addClass('active');
-    // });
-  
-    $headerSearchInput.on('input', function() {
-      $headerSearchMenu.addClass('active');
-      $('.header__search a').html($headerSearchInput.val());
-  
-      $('body').on('click', function() {
-        $headerSearchMenu.removeClass('active');
-      });
-    });
+  });
 
   // Header bg color
   let $headerMain = $('.header-main');
@@ -114,17 +114,17 @@ $(document).ready(function () {
   var options = {
 
     url: "https://api.myjson.com/bins/6ra24",
-  
+
     getValue: "name",
-  
+
     list: {
       match: {
         enabled: true
       }
     },
-  
+
   };
-  
+
   $("#inputSearch").easyAutocomplete(options);
 
   // Smooth scroll
@@ -164,4 +164,107 @@ $(document).ready(function () {
   }
 
   slickifyTest();
+
+  // Form validate
+  $("#validate1").validate({
+    errorClass: "input_error",
+    rules: {
+      email1: {
+        required: true,
+        email: true
+      },
+      amount1: {
+        required: true,
+        minlength: 2
+      },
+      income1: {
+        required: true,
+        minlength: 3
+      },
+      name1: {
+        required: true,
+        minlength: 2
+      }
+    },
+  });
+
+  $("#validate2").validate({
+    errorClass: "input_error",
+    rules: {
+      email2: {
+        required: true,
+        email: true
+      },
+      amount2: {
+        required: true,
+        minlength: 2
+      },
+      income2: {
+        required: true,
+        minlength: 3
+      },
+      name2: {
+        required: true,
+        minlength: 2
+      }
+    },
+  });
+
+  $("#validate3").validate({
+    errorClass: "input_error",
+    rules: {
+      email3: {
+        required: true,
+        email: true
+      },
+      name3: {
+        required: true,
+        minlength: 2
+      },
+      question3: {
+        required: true,
+        minlength: 4
+      }
+    },
+  });
+
+  $("#validate4").validate({
+    errorClass: "input_error",
+    rules: {
+      email4: {
+        required: true,
+        email: true
+      },
+      amount4: {
+        required: true,
+        minlength: 2
+      },
+      income4: {
+        required: true,
+        minlength: 3
+      },
+      name4: {
+        required: true,
+        minlength: 2
+      }
+    },
+  });
+
+  $("#validate5").validate({
+    errorClass: "input_error",
+    rules: {
+      email5: {
+        required: true,
+        email: true
+      },
+      name5: {
+        required: true,
+        minlength: 2
+      },
+      question5: {
+        required: true,
+        minlength: 4
+      }
+    },
+  });
 });

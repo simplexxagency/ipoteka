@@ -131,6 +131,7 @@
       // }
 
       &-wrap {
+          position: relative;
          margin-bottom: 10px;
 
          label {
@@ -172,6 +173,10 @@
              color: $color-main;
              background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
          }
+     }
+
+     &-item {
+         position: relative;
      }
   
       &-button {

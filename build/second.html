@@ -380,29 +380,29 @@
                                     <span>Get Pre-Approved in 60 seconds</span>
                                     
                                 </div>
-                                <form action="#">
+                                <form action="#" id="validate4">
                                     <div class="articles__form-item">
                                         <div class="articles__form-wrap">
-                                            <label for="amount3">Mortgage Amount *</label>
-                                            <input type="text" id='amount3' required>
+                                            <label for="amount4">Mortgage Amount *</label>
+                                            <input type="text" id='amount4' name="amount4">
                                         </div>
                                         <div class="articles__form-wrap">
-                                            <label for="income3">Household Income *</label>
-                                            <input type="text" id='income3' required>
+                                            <label for="income4">Household Income *</label>
+                                            <input type="text" id='income4' name="income4">
                                         </div>
                                     </div>
                                     <div class="articles__form-item">
                                         <div class="articles__form-wrap">
-                                            <label for="rating3">Credit Rating</label>
-                                            <select name="" id="rating3">
+                                            <label for="rating4">Credit Rating</label>
+                                            <select name="" id="rating4">
                                                 <option value="excellent" selected>Excellent</option>
                                                 <option value="notbad">Not bad</option>
                                                 <option value="bad">Bad</option>
                                             </select>
                                         </div>
                                         <div class="articles__form-wrap">
-                                            <label for="type3">Mortgage Type *</label>
-                                            <select name="" id="type3" required>
+                                            <label for="type4">Mortgage Type *</label>
+                                            <select name="" id="type4" required>
                                                 <option value=""></option>
                                                 <option value="excellent">Excellent</option>
                                                 <option value="notbad">Not bad</option>
@@ -413,18 +413,18 @@
                                     <div class="articles__form-item">
                                         <div class="articles__form-wrap">
                                             
-                                            <label for="name3">Name *</label>
-                                            <input type="text" id='name3' required>
+                                            <label for="name4">Name *</label>
+                                            <input type="text" id='name4' name="name4">
                                         </div>
                                         <div class="articles__form-wrap">
-                                            <label for="email3">E-mail *</label>
-                                            <input type="email" id='email3' required>
+                                            <label for="email4">E-mail *</label>
+                                            <input type="email" id='email4' name="email4">
                                         </div>
                                     </div>
                                     <div class="articles__form-item">
                                         <div class="articles__form-wrap">
-                                            <label for="phone3">Phone</label>
-                                            <input type="text" id='phone3'>
+                                            <label for="phone4">Phone</label>
+                                            <input type="text" id='phone4'>
                                         </div>
                                         <div class="articles__form-wrap">
                                             <div class="articles__form-button">
@@ -858,22 +858,22 @@
                         <div></div>
                     </div>
                     <div class="quest__form">
-                        <form action="#">
+                        <form action="#" id="validate5">
                             <div class="quest__form-top row">
                                 <div class="col-auto col-12 col-md-6 col-lg-4">
                                     <div class="quest__form-item">
-                                        <label for="q-name">
+                                        <label for="name5">
                                             Your Name *
                                         </label>
-                                        <input type="text" id="q-name" required>
+                                        <input type="text" id="name5" name="name5">
                                     </div>
                                 </div>
                                 <div class="col-auto col-12 col-md-6 col-lg-4">
                                     <div class="quest__form-item">
-                                        <label for="q-email">
+                                        <label for="email5">
                                             Your Email *
                                         </label>
-                                        <input type="email" id="q-email" required>
+                                        <input type="email" id="email5" name="email5">
                                     </div>
                                 </div>
 
@@ -888,10 +888,10 @@
 
                             </div>
                             <div class="quest__form-main">
-                                <label for="question">
+                                <label for="question5">
                                     Question *
                                 </label>
-                                <textarea name="" id="question"></textarea>
+                                <textarea name="question5" id="question5" class="textarea" required></textarea>
                             </div>
                             <div class="quest__button button">
                                 <!-- <a href="#">Send</a> -->
@@ -1236,6 +1236,9 @@
 
     <!-- Easeautocomplete -->
     <script src="js/jquery.easy-autocomplete.js"></script>
+
+    <!-- Jquery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
 
     <script src="js/script.js"></script>
 </body>

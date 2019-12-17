@@ -204,6 +204,29 @@ body {
     background: #157BC0;
     color: #fff; }
 
+label.input_error {
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  right: 0;
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px;
+  background: #157BC0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 2px; }
+  label.input_error:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    margin-left: -5px;
+    -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #157BC0 transparent; }
+
 @media all and (max-width: 577px) {
   .title {
     font-size: 32px; } }
@@ -226,6 +249,7 @@ body {
   .form__item:not(:last-child) {
     margin-bottom: 15px; }
   .form__item-wrap {
+    position: relative;
     width: 48%; }
     .form__item-wrap label {
       margin-bottom: 6px;
@@ -1410,6 +1434,8 @@ body {
       width: 832px; }
     .quest__form-top {
       margin-bottom: 24px; }
+    .quest__form-main {
+      position: relative; }
     .quest__form-item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1433,14 +1459,14 @@ body {
       .quest__form-main label {
         margin-bottom: 8px;
         font-size: 16px; }
-      .quest__form-main textarea {
+      .quest__form-main .textarea {
         padding: 15px;
         width: 100%;
         height: 144px;
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid #C4C8CC;
         border-radius: 2px; }
-        .quest__form-main textarea:focus {
+        .quest__form-main .textarea:focus {
           border: 1px solid #FEDF01; }
   .quest__button {
     display: -webkit-box;
@@ -1743,6 +1769,7 @@ body {
     text-align: center; }
 
 .articles__form-wrap {
+  position: relative;
   margin-bottom: 10px; }
   .articles__form-wrap label {
     margin-bottom: 7px;
@@ -1775,6 +1802,9 @@ body {
     background: -webkit-linear-gradient(right, #42ABE0 0%, #157BC0 100%);
     background: -o-linear-gradient(right, #42ABE0 0%, #157BC0 100%);
     background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%); }
+
+.articles__form-item {
+  position: relative; }
 
 .articles__form-button {
   margin-top: 16px; }
