@@ -99,8 +99,12 @@
                 width: 100%;
             }
 
+            &-top {
+                margin-bottom: 0;
+            }
+
             &-item {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
             }
         }
     }

@@ -313,7 +313,7 @@
         }
 
         &-logo {
-            width: 110px;
+            width: 90px;
         }
 
         &-btn {
@@ -380,6 +380,40 @@
 
             &:not(:last-child) {
                 margin-bottom: 20px;
+            }
+        }
+
+        &-itemlang {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                color: $color-blue;
+
+                &:hover {
+                    color: $color-main;
+                }
+            }
+        }
+
+        &-media {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+            }
+
+            li {
+
+                &:not(:last-child) {
+                    margin-right: 18px;
+                }
+            }
+
+            a {
+                width: 20px;
             }
         }
 
@@ -575,6 +609,13 @@
                 width: unset;
             }
 
+            &-item {
+
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                }
+            }
+
             &-form {
                 padding: 0 15px;
                 top: 0;
@@ -587,12 +628,13 @@
             &-menu {
 
                 &.active {
-                    height: calc( 100vh - 87px);
+                    height: calc( 100vh - 77px);
                 }
             }
 
             &-list {
                 height: 100%;
+                padding-bottom: 60px;
                 justify-content: space-around;
             }
         }
