@@ -92,4 +92,67 @@
        
         background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
     }
+
+    &__search {
+        display: none;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        top: 48px;
+        right: 0;
+        z-index: 2;
+        padding: 14px;
+        font-size: 16px;
+        color: #20262D;
+        background: #fff;
+        border: 1px solid $color-main;
+        border-radius: 2px;
+
+        ul {
+            flex-direction: column;
+        }
+
+        li {
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+
+        &.active {
+            display: block;
+        }
+
+        li {
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-fade {
+            display: none;
+
+            &.active {
+                position: relative;
+                display: block;
+            }
+
+            input {
+                position: relative;
+                
+                width: 100%;
+                padding: 12px;
+                font-size: 16px;
+                color: $color-main;
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid $color-main;
+                border-radius: 2px;
+
+                &:focus {
+                    border: 1px solid $color-yellow;
+                }
+            }
+        }
+    }
 }

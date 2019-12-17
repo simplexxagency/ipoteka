@@ -9,7 +9,7 @@
     <title>Main</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
 
+    <!-- EaseAutocomplete -->
+    <link rel="stylesheet" href="css/easy-autocomplete.css">
+    <link rel="stylesheet" href="css/easy-autocomplete.themes.css">
+
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -36,7 +40,7 @@
     <section class="hero" id="hero">
         <div class="container-fluid">
             <div class="hero__container">
-                <div class="hero__desctop d-none d-lg-block">
+                <div class="hero__desctop d-none d-xl-block">
                     <div class="hero__top">
                         <div class="hero__top-left">
                             <ul>
@@ -144,7 +148,7 @@
                                         </a>
                                     </li>
                                     <li class="hero__main-item hero__search-fade">
-                                        <input type="text" class="hero__search-input" id="" placeholder="Search">
+                                        <input type="text" class="hero__search-input" id="inputSearch" placeholder="Search">
                                         <div class="hero__search">
                                             <ul>
                                                 <li>
@@ -298,10 +302,42 @@
                                                 Contact
                                             </a>
                                         </li>
-                                        <li>
+                                        <li class="header__search-button active">
                                             <a href="javascript:void(0)">
                                                 <img src="img/hero-search.svg" alt="icon">
                                             </a>
+                                        </li>
+                                        <li class="header__search-fade">
+                                            <input type="text" class="header__search-input" id="inputSearch" placeholder="Search">
+                                            <div class="header__search">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            Result 1
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Result 2
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Result 3
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Result 4
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Result 5
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0)" class="header__top-link">
@@ -317,11 +353,14 @@
                 </div>
 
 
-                <div class="hero__mobile d-block d-lg-none">
+                <div class="hero__mobile d-block d-xl-none">
                     <div class="hero__mobile-header">
                         <div class="hero__mobile-wrap">
                             <div class="hero__mobile-logo">
-                                <img src="img/header-logo.png" alt="image">
+                                <a href="main.html">
+                                    <img src="img/header-logo.png" alt="image">
+                                </a>
+                                
                             </div>
                             <div class="hero__mobile-btn d-flex align-items-center d-xl-none">
                                 <div class="hero__mobile-icon">
@@ -355,11 +394,11 @@
                                 <li class="hero__mobile-item">
                                     <a href="#contact">Contact</a>
                                 </li>
-                                <li class="hero__mobile-item">
+                                <!-- <li class="hero__mobile-item">
                                     <a href="javascript:void(0)" class="hero__mobile-search">
                                         <img src="img/hero-search.svg" alt="icon">
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="hero__mobile-item">
                                     <div class="hero__mobile-button">
                                         <a href="javascript:void(0)">
@@ -1423,6 +1462,9 @@
 
     <!-- Mask input -->
     <script src="js/jquery.maskedinput.min.js"></script>
+
+    <!-- Easeautocomplete -->
+    <script src="js/jquery.easy-autocomplete.js"></script>
 
     <script src="js/script.js"></script>
 </body>

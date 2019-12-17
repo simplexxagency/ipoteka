@@ -1,0 +1,26 @@
+.s-hero {
+    margin-bottom: 65px;
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    &__img {
+
+        img {
+            max-height: 424px;
+        }
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .s-hero {
+        padding-top: 87px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .s-hero {
+        margin-bottom: 0;
+    }
+}

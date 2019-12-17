@@ -46,6 +46,35 @@ $(document).ready(function () {
     });
   });
 
+    // Search in section Header
+    let $headerSearch = $('.header__search-button');
+    let $headerFade = $('.header__search-fade');
+    let $headerSearchMenu = $('.header__search');
+    let $headerSearchInput = $('.header__search-input');
+  
+    $headerSearch.on('click', function() {
+      if ($headerSearch.hasClass('active')) {
+        $headerSearch.removeClass('active');
+        $headerFade.addClass('active');
+      } else {
+        $headerSearch.addClass('active');
+        $headerFade.removeClass('active');
+      }
+    });
+  
+    // $heroSearchInput.on('change', function() {
+    //   $heroSearchMenu.addClass('active');
+    // });
+  
+    $headerSearchInput.on('input', function() {
+      $headerSearchMenu.addClass('active');
+      $('.header__search a').html($headerSearchInput.val());
+  
+      $('body').on('click', function() {
+        $headerSearchMenu.removeClass('active');
+      });
+    });
+
   // Header bg color
   let $headerMain = $('.header-main');
   let $header = $('.header__container');
@@ -82,22 +111,21 @@ $(document).ready(function () {
   });
 
 
-  // var options = {
+  var options = {
 
-  //   url: "resources/countries.json",
+    url: "https://api.myjson.com/bins/6ra24",
   
-  //   getValue: "name",
+    getValue: "name",
   
-  //   list: {
-  //     match: {
-  //       enabled: true
-  //     }
-  //   },
+    list: {
+      match: {
+        enabled: true
+      }
+    },
   
-  //   theme: "square"
-  // };
+  };
   
-  // $("#countries").easyAutocomplete(options);
+  $("#inputSearch").easyAutocomplete(options);
 
   // Smooth scroll
   $('a[href^="#"]').click(function () {

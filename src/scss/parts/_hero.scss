@@ -90,6 +90,7 @@
         display: block;
         padding: 15px 66px;
         font-size: 14px;
+        white-space: nowrap;
         color: #ffffff;
         background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
 
@@ -312,7 +313,7 @@
         }
 
         &-logo {
-            width: 130px;
+            width: 110px;
         }
 
         &-btn {
@@ -586,7 +587,7 @@
             &-menu {
 
                 &.active {
-                    height: calc( 100vh - 100px);
+                    height: calc( 100vh - 87px);
                 }
             }
 

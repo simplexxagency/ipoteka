@@ -9,7 +9,7 @@
     <title>Second</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -25,6 +25,9 @@
     <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
 
+    <!-- EaseAutocomplete -->
+    <link rel="stylesheet" href="css/easy-autocomplete.css">
+
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -35,7 +38,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container-fluid">
-            <div class="header__container">
+            <div class="header__container d-none d-xl-flex">
                 <div class="header__logo">
                     <img src="img/header-logo.png" alt="logo">
                 </div>
@@ -76,10 +79,42 @@
                                 Contact
                             </a>
                         </li>
-                        <li>
+                        <li class="header__search-button active">
                             <a href="javascript:void(0)">
                                 <img src="img/hero-search.svg" alt="icon">
                             </a>
+                        </li>
+                        <li class="header__search-fade">
+                            <input type="text" class="header__search-input" id="inputSearch" placeholder="Search">
+                            <div class="header__search">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Result 1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Result 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Result 3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Result 4
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Result 5
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="javascript:void(0)" class="header__top-link">
@@ -89,7 +124,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hero__mobile d-block d-lg-none">
+            <div class="hero__mobile d-block d-xl-none">
                 <div class="hero__mobile-header">
                     <div class="hero__mobile-wrap">
                         <div class="hero__mobile-logo">
@@ -127,11 +162,11 @@
                             <li class="hero__mobile-item">
                                 <a href="#contact">Contact</a>
                             </li>
-                            <li class="hero__mobile-item">
+                            <!-- <li class="hero__mobile-item">
                                 <a href="javascript:void(0)" class="hero__mobile-search">
                                     <img src="img/hero-search.svg" alt="icon">
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="hero__mobile-item">
                                 <div class="hero__mobile-button">
                                     <a href="javascript:void(0)">
@@ -154,7 +189,7 @@
         <section class="s-hero">
             <div class="container-fluid">
                 <div class="s-hero__img">
-                    <img src="img/s-hero-img.png" alt="image">
+                    <img src="img/second-img-bg.jpg" alt="image">
                 </div>
             </div>
         </section>
@@ -164,17 +199,21 @@
         <section class="articles">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-lg-8 order-2 order-lg-1">
                         <div class="articles__container">
                             <h1 class="articles__title">
-                                Heading 1:
-                                Mortgage loan basics
+                                <span>
+                                    Heading 1:
+                                </span>
+                                <span>Mortgage loan basics</span>
+                                
                             </h1>
-                            <div class="article__line line">
+                            <div class="articles__line line">
                                 <div></div>
                             </div>
                             <div class="articles__text">
-                                According to Anglo-American property law, a mortgage occurs when an owner <a href="#"
+                                <p>
+                                    According to Anglo-American property law, a mortgage occurs when an owner <a href="#"
                                     class="articles__important">(usually of a fee simple interest in realty)</a> pledges his
                                 or her
                                 interest (right to the property) as security or collateral for a loan. Therefore, a
@@ -185,13 +224,17 @@
                                 a set period of time, typically 30 years. All types of real property can be, and usually
                                 are, secured with a mortgage and bear an interest rate that is supposed to reflect the
                                 lender's risk.
+                                </p>
+                                
                             </div>
-                            <h2>
-                                Heading 2:
-                                Mortgage underwriting
+                            <h2 class="articles__title">
+                                <span>Heading 2:</span>
+                                <span>Mortgage underwriting</span>
+                                
                             </h2>
                             <div class="articles__text">
-                                During the mortgage loan approval process, a mortgage loan underwriter verifies the
+                                <p>
+                                    During the mortgage loan approval process, a mortgage loan underwriter verifies the
                                 financial information that the applicant has provided as to income, employment, credit
                                 history and the value of the home being purchased.[3] <span class="articles__strong">An
                                     appraisal may be
@@ -201,14 +244,21 @@
                                 employment and not to use or open new credit during the underwriting process. Any
                                 changes made in the applicant's credit, employment, or financial information could
                                 result in the loan being denied.
+                                </p>
+                                
                             </div>
-                            <h3>
-                                Heading 3: Mortgage loan types
+                            <h3 class="articles__title">
+                                <span>Heading 3:</span>
+                                <span>Mortgage loan types</span>
+                                 
                             </h3>
                             <div class="articles__text">
-                                There are many types of mortgages used worldwide, but several factors broadly define the
-                                characteristics of the mortgage. All of these may be subject to local regulation and
-                                legal requirements.
+                                <p>
+                                    There are many types of mortgages used worldwide, but several factors broadly define the
+                                    characteristics of the mortgage. All of these may be subject to local regulation and
+                                    legal requirements.
+                                </p>
+                               
 
                                 <ul>
                                     <li>
@@ -247,7 +297,9 @@
                                 </a>
                             </div>
                             <h3 class="articles__title">
-                                Heading 3: Mortgage loan types
+                                <span>Heading 3:</span>
+                                <span>Mortgage loan types</span>
+                                 
                             </h3>
                             <div class="articles__text">
                                 The charge to the borrower depends upon the credit risk in addition to the interest rate
@@ -258,11 +310,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 order-1 order-lg-2">
                         <div class="articles__wrap">
                             <div class="articles__box">
                                 <div class="articles__form-title">
-                                    Get Pre-Approved in 60 seconds
+                                    <span>Get Pre-Approved in 60 seconds</span>
+                                    
                                 </div>
                                 <form action="#">
                                     <div class="articles__form-item">
@@ -296,8 +349,9 @@
                                     </div>
                                     <div class="articles__form-item">
                                         <div class="articles__form-wrap">
-                                            <label for="phone3">Phone</label>
-                                            <input type="text" id='phone3'>
+                                            
+                                            <label for="name3">Name *</label>
+                                            <input type="text" id='name3' required>
                                         </div>
                                         <div class="articles__form-wrap">
                                             <label for="email3">E-mail *</label>
@@ -306,8 +360,8 @@
                                     </div>
                                     <div class="articles__form-item">
                                         <div class="articles__form-wrap">
-                                            <label for="name3">Name *</label>
-                                            <input type="text" id='name3' required>
+                                            <label for="phone3">Phone</label>
+                                            <input type="text" id='phone3'>
                                         </div>
                                         <div class="articles__form-wrap">
                                             <div class="articles__form-button">
@@ -776,11 +830,15 @@
                                 </label>
                                 <textarea name="" id="question"></textarea>
                             </div>
+                            <div class="quest__button button">
+                                <!-- <a href="#">Send</a> -->
+                                <input type="submit" value="Send">
+                            </div>
                         </form>
                     </div>
-                    <div class="quest__button button">
+                    <!-- <div class="quest__button button">
                         <a href="#">Send</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -1112,6 +1170,9 @@
 
     <!-- Mask input -->
     <script src="js/jquery.maskedinput.min.js"></script>
+
+    <!-- Easeautocomplete -->
+    <script src="js/jquery.easy-autocomplete.js"></script>
 
     <script src="js/script.js"></script>
 </body>
