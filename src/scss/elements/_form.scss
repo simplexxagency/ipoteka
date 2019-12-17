@@ -82,6 +82,26 @@
     }
 }
 
+@media all and (max-width: 1199px) {
+    .form {
+
+        &__button {
+            input {
+                color: $color-blue;
+                background: $color-yellow;
+                border: 1px solid transparent;
+
+                &:hover {
+                    color: $color-yellow;
+                    transition: all ease 1s;
+                    background: $color-blue;
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
+
 @media all and (max-width: 991px) {
     .form {
 
@@ -97,17 +117,6 @@
             }
         }
 
-        &__button {
-            input {
-                background: $color-yellow;
-                border: 1px solid transparent;
-
-                &:hover {
-                    transition: all ease 1s;
-                    background: $color-blue;
-                    border: 1px solid #fff;
-                }
-            }
-        }
+        
     }
 }

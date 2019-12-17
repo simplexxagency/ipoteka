@@ -275,6 +275,19 @@ body {
   .form__button input:hover {
     background: #157BC0; }
 
+@media all and (max-width: 1199px) {
+  .form__button input {
+    color: #157BC0;
+    background: #FEDF01;
+    border: 1px solid transparent; }
+    .form__button input:hover {
+      color: #FEDF01;
+      -webkit-transition: all ease 1s;
+      -o-transition: all ease 1s;
+      transition: all ease 1s;
+      background: #157BC0;
+      border: 1px solid #fff; } }
+
 @media all and (max-width: 991px) {
   .form__item {
     -webkit-box-orient: vertical;
@@ -284,16 +297,7 @@ body {
     .form__item-wrap {
       width: 100%; }
       .form__item-wrap:not(:last-child) {
-        margin-bottom: 15px; }
-  .form__button input {
-    background: #FEDF01;
-    border: 1px solid transparent; }
-    .form__button input:hover {
-      -webkit-transition: all ease 1s;
-      -o-transition: all ease 1s;
-      transition: all ease 1s;
-      background: #157BC0;
-      border: 1px solid #fff; } }
+        margin-bottom: 15px; } }
 
 .header-main {
   display: none; }
@@ -907,7 +911,7 @@ body {
   .hero__top-media {
     margin-right: 25px; } }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 1199px) {
   .hero {
     margin-bottom: -270px; }
     .hero__mobile-form {
@@ -1457,6 +1461,8 @@ body {
       background: -o-linear-gradient(right, #42ABE0 0%, #157BC0 100%);
       background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
       border-radius: 4px; }
+      .quest__button input:hover {
+        background: #157BC0; }
 
 @media all and (max-width: 991px) {
   .quest__form form {

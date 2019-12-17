@@ -85,6 +85,10 @@
             color: #fff;
             background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
             border-radius: 4px;
+
+            &:hover {
+                background: $color-blue;
+            }
         }
         
     }
