@@ -2,11 +2,16 @@
 
 $(document).ready(function () {
 
+  
+
   // Form Mask
   jQuery(function ($) {
     $('#phone').mask('+9 (999) 999-9999');
+    $('#phone2').mask('+9 (999) 999-9999');
     $('#q-phone').mask('+9 (999) 999-9999');
     $('#phone3').mask('+9 (999) 999-9999');
+    $('#phone4').mask('+9 (999) 999-9999');
+    $('#phone6').mask('+9 (999) 999-9999');
   });
 
   // Tooltip in Header
@@ -267,4 +272,54 @@ $(document).ready(function () {
       }
     },
   });
+
+  $("#validate6").validate({
+    errorClass: "input_error",
+    rules: {
+      first6: {
+        required: true,
+        minlength: 2
+      },
+      last6: {
+        required: true,
+        minlength: 2
+      },
+      email6: {
+        required: true,
+        email: true
+      },
+      phone6: {
+        required: true
+      },
+      city6: {
+        required: true,
+        minlength: 2
+      },
+      country6: {
+        required: true,
+        minlength: 2
+      },
+      time6: {
+        required: true
+      },
+      method6: {
+        required: true
+      },
+      subject6: {
+        required: true
+      },
+      question6: {
+        required: true,
+        minlength: 2
+      }
+    },
+    messages: {
+      method6: {
+        required: "Please"
+      }
+    },
+    
+  });
+
+  
 });
