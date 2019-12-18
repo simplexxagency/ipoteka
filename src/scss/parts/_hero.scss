@@ -247,11 +247,11 @@
             // visibility: hidden;
             // opacity: 0;
             display: none;
-            // background-color: #fff;
+            background-color: #fff;
             border: 1px solid rgba(255, 255, 255, 0.4);
 
             li {
-                color: #fff;
+                color: $color-main;
 
                 &:not(:last-child) {
                     margin-bottom: 10px;

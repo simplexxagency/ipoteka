@@ -636,9 +636,10 @@ label.input_error {
     position: absolute;
     padding: 20px;
     display: none;
+    background-color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.4); }
     .hero__main-submenu li {
-      color: #fff; }
+      color: #20262D; }
       .hero__main-submenu li:not(:last-child) {
         margin-bottom: 10px; }
   .hero__main-link {
