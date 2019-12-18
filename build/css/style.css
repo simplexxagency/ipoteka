@@ -2414,3 +2414,130 @@ label.input_error {
     flex-wrap: wrap; }
   .videos .pagination .paginationjs-page {
     margin-bottom: 10px; } }
+
+.b-hero .container-fluid {
+  padding: 0; }
+
+.b-hero__img img {
+  max-height: 424px;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+@media all and (max-width: 1199px) {
+  .b-hero {
+    padding-top: 77px; } }
+
+.b-blog {
+  padding: 64px 0; }
+  .b-blog__title {
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    font-weight: 400; }
+    .b-blog__title-wrap {
+      margin-bottom: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .b-blog__line {
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .b-blog .pagination__box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .b-blog .paginationjs-pages ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .b-blog .pagination .paginationjs-page {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 17px;
+    color: #B0B0B0;
+    background: #F2F4F5;
+    border: 1px solid #C4C8CC; }
+    .b-blog .pagination .paginationjs-page.active {
+      color: #157BC0;
+      border: 1px solid #157BC0; }
+    .b-blog .pagination .paginationjs-page:hover {
+      color: #157BC0;
+      border: 1px solid #157BC0; }
+  .b-blog .pagination .paginationjs-prev a,
+  .b-blog .pagination .paginationjs-next a {
+    width: 90px;
+    height: 40px;
+    position: relative;
+    color: transparent;
+    background: #157BC0;
+    border: 1px solid #157BC0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .b-blog .paginationjs-ellipsis {
+    width: 40px;
+    margin-right: 8px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #F2F4F5;
+    border: 1px solid #C4C8CC; }
+    .b-blog .paginationjs-ellipsis a {
+      letter-spacing: 3px;
+      color: #B0B0B0; }
+  .b-blog .pagination .paginationjs-prev a {
+    margin-right: 8px; }
+    .b-blog .pagination .paginationjs-prev a:before {
+      content: 'Prev';
+      display: block;
+      font-size: 17px;
+      color: #fff; }
+  .b-blog .pagination .paginationjs-next a:before {
+    content: 'Next';
+    display: block;
+    font-size: 17px;
+    color: #fff; }
+  .b-blog .pagination .paginationjs-next:after,
+  .b-blog .pagination .paginationjs-prev:after {
+    display: none; }
+
+@media all and (max-width: 767px) {
+  .videos .paginationjs-pages ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .videos .pagination .paginationjs-page {
+    margin-bottom: 10px; } }

@@ -1,0 +1,20 @@
+.b-hero {
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    &__img {
+
+        img {
+            max-height: 424px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .b-hero {
+        padding-top: 77px;
+    }
+}
