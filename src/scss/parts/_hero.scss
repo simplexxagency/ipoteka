@@ -243,6 +243,7 @@
 
         &-submenu {
             position: absolute;
+            z-index: 2;
             padding: 20px;
             // visibility: hidden;
             // opacity: 0;
@@ -255,6 +256,13 @@
 
                 &:not(:last-child) {
                     margin-bottom: 10px;
+                }
+
+                a {
+
+                    &:hover {
+                        color: $color-blue;
+                    }
                 }
             }
         }

@@ -634,6 +634,7 @@ label.input_error {
       margin-right: 32px; }
   .hero__main-submenu {
     position: absolute;
+    z-index: 2;
     padding: 20px;
     display: none;
     background-color: #fff;
@@ -642,6 +643,8 @@ label.input_error {
       color: #20262D; }
       .hero__main-submenu li:not(:last-child) {
         margin-bottom: 10px; }
+      .hero__main-submenu li a:hover {
+        color: #157BC0; }
   .hero__main-link {
     width: 20px;
     font-size: 18px;
