@@ -70,6 +70,14 @@
                 img {
                     filter: brightness(0) saturate(100%) invert(69%) sepia(97%) saturate(458%) hue-rotate(3deg) brightness(109%) contrast(99%);
                 }
+
+                &:hover {
+
+                    img {
+                        transition: all ease 0.5s;
+                        filter: brightness(0) saturate(100%) invert(47%) sepia(90%) saturate(5282%) hue-rotate(186deg) brightness(90%) contrast(84%);
+                    }
+                }
             }
         }
     }
@@ -101,6 +109,7 @@
         }
 
         &-bottom {
+            margin-bottom: 20px;
             display: flex;
         }
 
@@ -116,7 +125,7 @@
             textarea {
                 padding: 15px;
                 width: 100%;
-                height: 144px;
+                height: 104px;
                 background: rgba(255, 255, 255, 0.1);
                 border: 1px solid #C4C8CC;
                 border-radius: 2px;
@@ -203,7 +212,7 @@
     &__bottom {
 
         &-title {
-            margin-bottom: 8px;
+            margin-bottom: 14px;
             font-size: 16px;
         }
 
@@ -217,48 +226,30 @@
 
             label {
                 margin-bottom: 8px;
-                font-size: 16px;
+                font-size: 14px;
             }
 
             input[type=checkbox], input[type=radio] {display: none;}
 
-            input[type=checkbox] + label:before {
-                content: "\2713";
-                color: transparent;
-                display: inline-block;
-                border: 1px solid #000;
-                font-size: 20px;    
-                line-height: 22px;
-                margin: -5px 5px 0 0;
-                height: 20px;
-                width: 20px;
-                text-align: center;
-                vertical-align: middle;
-                transition: color ease .3s;
-            }
-
-            input[type=checkbox]:checked + label:before {
-                color: #000;
-            }
-
             input[type=radio] + label:before {
                 content: "\26AB";
-                border: 1px solid #000;
+                border: 1px solid #C4C8CC;
                 border-radius: 50%;
                 display: inline-block;
-                border: 1px solid #000;
-                font-size: 20px;    
-                line-height: 20px;
+                border: 1px solid #C4C8CC;
+                font-size: 15px;    
+                line-height: 15px;
                 margin: -5px 5px 0 0;
-                height: 20px;
-                width: 20px;
+                height: 15px;
+                width: 15px;
                 text-align: center;
                 vertical-align: middle;
                 font-size: 0;    
                 transition: font-size ease .3s;
             }
             input[type=radio]:checked + label:before {
-                font-size: 20px;    
+                font-size: 5px;  
+                text-align: center;  
             }
     
             select {
@@ -266,7 +257,7 @@
                 width: 100%;
                 font-size: 16px;
                 color: $color-main;
-                background: url('../../../img/arrow-down-grey.svg') right center no-repeat;
+                background: url('../../../img/arrow-down-grey.svg') right 5% center no-repeat;
                 background-color: rgba(255, 255, 255, 0.1);
                 border: 1px solid #C4C8CC;
                 border-radius: 2px;
@@ -274,6 +265,84 @@
 
             option {
                 color: $color-main;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .contact {
+        padding: 90px 0 70px;
+
+
+        &__contact {
+            margin-bottom: 60px;
+        }
+
+        &__form {
+            position: static;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .contact {
+
+        &__title {
+            width: 100%;
+        }
+
+        &__contacts {
+            width: 100%;
+        }
+
+        &__form {
+            padding: 34px 18px 63px;
+
+            &-top {
+                flex-direction: column;
+            }
+
+            &-middle {
+                flex-direction: column;
+            }
+
+            &-bottom {
+                flex-direction: column;
+            }
+        }
+
+        &__top {
+
+            &-item {
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__middle {
+
+            &-item {
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__bottom {
+
+            &-item {
+                width: 100%;
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
             }
         }
     }

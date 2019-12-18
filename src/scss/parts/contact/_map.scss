@@ -1,5 +1,9 @@
 .map {
 
+    .container-fluid {
+        padding: 0;
+    }
+
     &__container {
         height: 600px;
     }
