@@ -223,8 +223,39 @@
         &-item {
             flex-shrink: 0;
 
+            &:hover {
+
+                ul.hero__main-submenu {
+                    // visibility: visible;
+                    // opacity: 1;
+                    display: block;
+                }
+            }
+
             &:not(:last-child) {
                 margin-right: 32px;
+            }
+        }
+
+        // &-arrow {
+        //     background: url("../img/arrow-down-s-fill.svg") right center no-repeat;
+        // }
+
+        &-submenu {
+            position: absolute;
+            padding: 20px;
+            // visibility: hidden;
+            // opacity: 0;
+            display: none;
+            // background-color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+
+            li {
+                color: #fff;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
             }
         }
 

@@ -628,8 +628,19 @@ label.input_error {
   .hero__main-item {
     -ms-flex-negative: 0;
     flex-shrink: 0; }
+    .hero__main-item:hover ul.hero__main-submenu {
+      display: block; }
     .hero__main-item:not(:last-child) {
       margin-right: 32px; }
+  .hero__main-submenu {
+    position: absolute;
+    padding: 20px;
+    display: none;
+    border: 1px solid rgba(255, 255, 255, 0.4); }
+    .hero__main-submenu li {
+      color: #fff; }
+      .hero__main-submenu li:not(:last-child) {
+        margin-bottom: 10px; }
   .hero__main-link {
     width: 20px;
     font-size: 18px;
