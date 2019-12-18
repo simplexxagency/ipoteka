@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Second</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
+
+    <!-- EaseAutocomplete -->
+    <link rel="stylesheet" href="css/easy-autocomplete.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__container d-none d-xl-flex">
+                <div class="header__logo">
+                    <a href="main.html">
+                        <img src="img/header-logo.png" alt="logo">
+                    </a>
+
+                </div>
+                <div class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="#hero">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mortgage">
+                                Mortgage
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#videos">
+                                Videos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="header__search-button active">
+                            <a href="javascript:void(0)">
+                                <img src="img/hero-search.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="header__search-fade">
+                            <input type="text" class="header__search-input" id="inputSearch" placeholder="Search">
+                            <div class="header__search">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Result 1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Result 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Result 3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Result 4
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Result 5
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="header__top-link">
+                                Apply Now
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mobile -->
+            <div class="hero__mobile d-block d-xl-none">
+                <div class="hero__mobile-header">
+                    <div class="hero__mobile-wrap">
+                        <div class="hero__mobile-logo">
+                            <a href="main.html">
+                                <img src="img/header-logo.png" alt="image">
+                            </a>
+
+                        </div>
+                        <div class="hero__mobile-btn d-flex align-items-center d-xl-none">
+                            <div class="hero__mobile-icon">
+                                <div class="hero__mobile-line"></div>
+                                <div class="hero__mobile-line"></div>
+                                <div class="hero__mobile-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__mobile-menu d-xl-none">
+                        <ul class="hero__mobile-list">
+                            <li class="hero__mobile-item">
+                                <a href="#hero">Home</a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <a href="#services">Services</a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <a href="#mortgage">Mortgage</a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <a href="#videos">Videos</a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <a href="#blog">Blog</a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <!-- <li class="hero__mobile-item">
+                                <a href="javascript:void(0)" class="hero__mobile-search">
+                                    <img src="img/hero-search.svg" alt="icon">
+                                </a>
+                            </li> -->
+                            <li class="hero__mobile-item">
+                                <div class="hero__mobile-media">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/youtube-fill.svg" alt="icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/twitter-fill (1).svg" alt="icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/facebook-box-fill.svg" alt="icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/linkedin-box-fill.svg" alt="icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <a href="#">
+                                    +1(778) 836-6461
+                                </a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <a href="mailto:iryna.rudavska@ipoteka.ca">iryna.rudavska@ipoteka.ca</a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <span>
+                                    Mon-Fri: 8am - 7pm
+                                </span>
+
+                            </li>
+                            <li class="hero__mobile-item hero__mobile-itemlang">
+                                <a href="javascript:void(0)">
+                                    English
+                                </a>
+                                <a href="javascript:void(0)">
+                                    Русский
+                                </a>
+                            </li>
+                            <li class="hero__mobile-item">
+                                <div class="hero__mobile-button">
+                                    <a href="javascript:void(0)">
+                                        Apply now
+                                    </a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__title title">
+                        Cities We Serve
+                    </div>
+                    <div class="footer__line">
+                        <div></div>
+                    </div>
+                    <div class="footer__cities row">
+                        <div class="footer__cities-item col-auto col-12 col-sm-6 col-lg-3">
+                            <ul>
+                                <li>
+                                    Burnaby
+                                </li>
+                                <li>
+                                    Coal Harbor
+                                </li>
+                                <li>
+                                    False Creek
+                                </li>
+                                <li>
+                                    Ladner
+                                </li>
+                                <li>
+                                    Mount Pleasant
+                                </li>
+                                <li>
+                                    Richmond
+                                </li>
+                                <li>
+                                    Squarmish
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__cities-item col-auto col-12 col-sm-6 col-lg-3">
+                            <ul>
+                                <li>
+                                    Surrey
+                                </li>
+                                <li>
+                                    Vancouver
+                                </li>
+                                <li>
+                                    White Rock
+                                </li>
+                                <li>
+                                    Chilliwack
+                                </li>
+                                <li>
+                                    Coquitlam
+                                </li>
+                                <li>
+                                    Kerrisdale
+                                </li>
+                                <li>
+                                    UBC
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__cities-item col-auto col-12 col-sm-6 col-lg-3">
+                            <ul>
+                                <li>
+                                    Langley
+                                </li>
+                                <li>
+                                    North Vancouver
+                                </li>
+                                <li>
+                                    Shaughnessy
+                                </li>
+                                <li>
+                                    Tsawwassen
+                                </li>
+                                <li>
+                                    West End
+                                </li>
+                                <li>
+                                    Yaletown
+                                </li>
+                                <li>
+                                    West Vancouver
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__cities-item col-auto col-12 col-sm-6 col-lg-3">
+                            <ul>
+                                <li>
+                                    Cloverdale
+                                </li>
+                                <li>
+                                    Coal Harbor
+                                </li>
+                                <li>
+                                    Delta
+                                </li>
+                                <li>
+                                    Kitsilano
+                                </li>
+                                <li>
+                                    Maple Ridge
+                                </li>
+                                <li>
+                                    Port Moody
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__main">
+                        <div class="footer__main-item">
+                            <div class="footer__main-title">
+                                About
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        About-us new
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Testimonials
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Why&#160;use&#160;a&#160;Mortgage Broker
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Charity
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__main-item">
+                            <div class="footer__main-title">
+                                Services
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Purchase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Renewal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Refinance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Direct Switch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Debt&#160;Consolidation
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__main-item">
+                            <div class="footer__main-title">
+                                Mortgage Info
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Mortgage for First
+                                        Home Buyer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Mortgage for New
+                                        Immigrants
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Mortgage for Self
+                                        Employed Individuals
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Mortgage with Bad
+                                        Credit Score
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Private Mortgage
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Mortgage for Real
+                                        Estate Investors
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__main-item footer__main-itemsmall">
+                            <div class="footer__main-title">
+                                Contacts
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        +1(778) 836-6461
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        iryna.rudavska@ipoteka.ca
+    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+    
+                                        3989 Henning Dr. Unit #105
+                                        Burnaby, BC V5C 6P8
+    
+    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Mon - Fri: 8am - 7pm
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__main-item">
+                            <div class="footer__main-title">
+                                Follow us
+                            </div>
+                            <div class="footer__main-media">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/youtube-fill.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/twitter-fill (1).svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/facebook-box-fill.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/linkedin-box-fill.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__form">
+                                <form action="#">
+                                    <label for="f-email">
+                                        Subscribe
+                                    </label>
+                                    <input type="text" id="f-email">
+                                    <input type="submit" value="Subscribe">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__copyright">
+                            2019 Ipoteka Mortgage Inc. © 2019 All Rights Reserved. Website by EFC Marketing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+        <!-- Fancybox -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    
+        <!-- Slick Slider -->
+        <script src="js/slick.min.js"></script>
+    
+        <!-- Mask input -->
+        <script src="js/jquery.maskedinput.min.js"></script>
+    
+        <!-- Easeautocomplete -->
+        <script src="js/jquery.easy-autocomplete.js"></script>
+    
+        <!-- AIzaSyD4R9PQyMDROizmuglGKqxCnsFl62st7pM -->
+    
+        <!-- Jquery Validate -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    
+        <!-- Pagination.js -->
+        <script src="js/pagination.js"></script>
+    
+        <script src="js/script.js"></script>
+    
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4R9PQyMDROizmuglGKqxCnsFl62st7pM"></script>
+    
+    </body>
+    
+    </html>

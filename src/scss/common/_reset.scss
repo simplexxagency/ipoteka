@@ -8,12 +8,12 @@ input, textarea, select {
 input {
      border: none;
 }
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent; }
-::-webkit-scrollbar-thumb {
-  width: 0;
-  background: transparent; }
+// ::-webkit-scrollbar {
+//   width: 0;
+//   background: transparent; }
+// ::-webkit-scrollbar-thumb {
+//   width: 0;
+//   background: transparent; }
 .btn-link:focus, .btn-link.focus {
     text-decoration: none;
 }

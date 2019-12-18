@@ -17,9 +17,14 @@ $(document).ready(function () {
   // Tooltip in Header
   let $langTip = $('.hero__lang-tooltip');
   let $langMenu = $('.hero__top-lang');
+  let $langItem = $('.hero__lang');
 
-  $langTip.on('click', function () {
-    $langMenu.find('div').toggleClass('active');
+  $langItem.on('click', function () {
+    $(this).find($langTip).toggleClass('active');
+  });
+
+  $langTip.on('click', function() {
+    $langItem.toggleClass('active');
   });
 
   // Search in section Hero

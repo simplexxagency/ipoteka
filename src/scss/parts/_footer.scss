@@ -228,12 +228,34 @@
 
         &__cities {
             padding: 0 15px 64px;
+
+            li {
+                font-size: 14px;
+            }
         }
 
         &__main {
 
             &-item {
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                ul {
+                    align-items: center;
+                }
+            }
+
+            &-media {
+                margin-bottom: 30px;
+
+                li {
+
+                    &:not(:last-child) {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
 
