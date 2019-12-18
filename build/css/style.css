@@ -980,6 +980,9 @@ label.input_error {
 @media all and (max-width: 577px) {
   .hero {
     margin-bottom: 0; }
+    .hero__mobile-submenu {
+      right: -120px;
+      padding: 20px 30px; }
     .hero__mobile-title {
       font-size: 36px;
       width: unset; }
