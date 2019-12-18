@@ -1,0 +1,190 @@
+.videos {
+    padding: 64px 0;
+
+    &__title {
+        font-size: 48px;
+        letter-spacing: -0.02em;
+        font-weight: 400;
+
+        &-wrap {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+
+    &__line {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+
+        &>div {
+            margin-bottom: 47px;
+        }
+
+        &-img {
+            margin-bottom: 33px;
+            position: relative;
+            padding: 8px;
+            border: 1px solid #C4C8CC;
+        }
+
+        &-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 56px;
+            height: 39px;
+            border-radius: 11px;
+            background: linear-gradient(180deg, #157BC0 0%, #42ABE0 100%);
+        
+            &:hover {
+                opacity: 0.8;
+                transition: all ease 1s;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                -webkit-transform: translateX(2px);
+                -ms-transform: translateX(2px);
+                transform: translateX(2px);
+                border-left: #ffffff 11px solid;
+                border-top: 7px solid transparent;
+                border-right: 0;
+                border-bottom: 7px solid transparent;
+
+            }
+        }
+
+        &-name {
+            margin-bottom: 8px;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.03em;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 26px;
+        }
+    }
+
+    .pagination__box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .paginationjs-pages {
+
+        ul {
+            display: flex;
+        }
+    }
+
+    .pagination .paginationjs-page {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        color: #B0B0B0;;
+        background: #F2F4F5;
+        border: 1px solid #C4C8CC;
+
+        &.active {
+            color: $color-blue;
+            border: 1px solid #157BC0;
+        }
+
+        &:hover {
+            color: $color-blue;
+            border: 1px solid #157BC0;
+        }
+    }
+
+    .pagination .paginationjs-prev a, 
+    .pagination .paginationjs-next a {
+        width: 90px;
+        height: 40px;
+        position: relative;
+        color: transparent;
+        background: #157BC0;
+        border: 1px solid #157BC0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paginationjs-ellipsis {
+        width: 40px;
+        margin-right: 8px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F2F4F5;
+        border: 1px solid #C4C8CC;
+
+        a {
+            letter-spacing: 3px;
+            color: #B0B0B0;
+        }
+    }
+
+    .pagination .paginationjs-prev a {
+        margin-right: 8px;
+
+        &:before {
+            content: 'Prev';
+            display: block;
+            font-size: 17px;
+            color: #fff;
+        }
+    }
+
+    .pagination .paginationjs-next a {
+
+        &:before {
+            content: 'Next';
+            display: block;
+            font-size: 17px;
+            color: #fff;
+            
+        }
+    }
+
+    .pagination .paginationjs-next:after,
+    .pagination .paginationjs-prev:after {
+        display: none;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .videos {
+
+        .paginationjs-pages {
+
+            ul {
+                flex-wrap: wrap;
+            }
+        }
+
+        .pagination .paginationjs-page {
+            margin-bottom: 10px;
+        }
+    }
+}
