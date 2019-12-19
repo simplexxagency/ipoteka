@@ -2,7 +2,19 @@
 
 $(document).ready(function () {
 
-  
+  // Resize input
+  function resizeInput() {
+    $(this).attr('size', $(this).val().length);
+};
+
+$('.header__search-input').keyup(resizeInput).each(resizeInput);
+
+
+  // Mobile submenu in header
+  $('.hero__mobile-item a').on('click', function() {
+    console.log('qq');
+    $(this).closest('.hero__mobile-item').toggleClass('active');
+  });
 
   // Form Mask
   jQuery(function ($) {
@@ -114,11 +126,11 @@ $(document).ready(function () {
 
   });
 
-  $('.hero__mobile-item a').on('click', function () {
-    $('.hero__mobile-line').removeClass('active');
-    $('.hero__mobile-menu').removeClass('active');
-    $('body').removeClass('active');
-  });
+  // $('.hero__mobile-item a').on('click', function () {
+  //   $('.hero__mobile-line').removeClass('active');
+  //   $('.hero__mobile-menu').removeClass('active');
+  //   $('body').removeClass('active');
+  // });
 
 
   var options = {

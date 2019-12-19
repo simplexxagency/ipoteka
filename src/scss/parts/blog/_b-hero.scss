@@ -4,13 +4,15 @@
         padding: 0;
     }
 
-    &__img {
+    // &__img {
+    //     max-height: 424px;
+    //     overflow: hidden;
 
-        img {
-            max-height: 424px;
-            object-fit: cover;
-        }
-    }
+    //     // img {
+            
+    //     //     object-fit: cover;
+    //     // }
+    // }
 }
 
 @media all and (max-width: 1199px) {

@@ -429,7 +429,7 @@
         &-list {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            // align-items: center;
         }
 
         &-item {
@@ -439,22 +439,29 @@
                 margin-bottom: 20px;
             }
 
-            &:hover {
+            &.active {
 
                 ul.hero__mobile-submenu {
                     display: block;
                 }
             }
+
+            // &:hover {
+
+            //     ul.hero__mobile-submenu {
+            //         display: block;
+            //     }
+            // }
         }
 
         &-submenu {
             display: none;
-            position: absolute;
-            right: -150px;
-            top: 0;
+            // position: absolute;
+            // right: -150px;
+            // top: 0;
             z-index: 1;
             padding: 20px 40px;
-            border: 1px solid $color-main;
+            // border: 1px solid $color-main;
 
             li {
 
@@ -474,13 +481,17 @@
         &-itemlang {
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            // justify-content: space-around;
 
             a {
                 color: $color-blue;
 
                 &:hover {
                     color: $color-main;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 20px;
                 }
             }
         }
@@ -567,7 +578,7 @@
     &__search {
         display: none;
         position: absolute;
-        width: 100%;
+        // width: 100%;
         top: 35px;
         right: 0;
         z-index: 2;
@@ -709,12 +720,12 @@
                 width: unset;
             }
 
-            &-item {
+            // &-item {
 
-                &:not(:last-child) {
-                    margin-bottom: 0;
-                }
-            }
+            //     &:not(:last-child) {
+            //         margin-bottom: 0;
+            //     }
+            // }
 
             &-form {
                 padding: 0 15px;
@@ -735,7 +746,7 @@
             &-list {
                 height: 100%;
                 padding-bottom: 60px;
-                justify-content: space-around;
+                // justify-content: space-around;
             }
         }
     }

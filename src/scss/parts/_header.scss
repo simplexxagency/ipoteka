@@ -98,7 +98,7 @@
         display: none;
         position: absolute;
         overflow: hidden;
-        width: 100%;
+        // width: 100%;
         top: 48px;
         right: 0;
         z-index: 2;
@@ -142,7 +142,7 @@
             input {
                 position: relative;
                 
-                width: 100%;
+                width: 150px;
                 padding: 12px;
                 font-size: 16px;
                 color: $color-main;
@@ -152,6 +152,128 @@
 
                 &:focus {
                     border: 1px solid $color-yellow;
+                }
+            }
+        }
+    }
+
+    &__contact {
+
+        ul {
+            display: flex;
+        }
+
+        li {
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            .header__contact-phone {
+                display: block;
+                position: relative;
+                width: 20px;
+
+                span {
+                    white-space: nowrap;
+                    display: none;
+                    position: absolute;
+                    top: 130%;
+                    left: -32%;
+                    margin-left: -60px;
+                    // width: 100px;
+                    background-color: #fff;
+                    text-align: center;
+                    padding: 10px;
+                    border-radius: 11px;
+                    border: 1px solid #eeeeee;
+                    z-index: 5;
+                    -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+                    box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+                    -webkit-transition: opacity .6s;
+                    -o-transition: opacity .6s;
+                    transition: opacity .6s;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        bottom: 100%;
+                        left: 50%;
+                        margin-left: -5px;
+                        -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+                        box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+                        border-width: 5px;
+                        border-style: solid;
+                        border-color: transparent transparent #fff transparent;
+                    }
+
+
+
+
+
+
+                    }
+                
+
+                &:hover {
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+
+            .header__contact-mail {
+                display: block;
+                position: relative;
+                width: 20px;
+
+                span {
+                    white-space: nowrap;
+                    display: none;
+                    position: absolute;
+                    top: 130%;
+                    left: -200%;
+                    margin-left: -60px;
+                    // width: 100px;
+                    background-color: #fff;
+                    text-align: center;
+                    padding: 10px;
+                    border-radius: 11px;
+                    border: 1px solid #eeeeee;
+                    z-index: 5;
+                    -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+                    box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+                    -webkit-transition: opacity .6s;
+                    -o-transition: opacity .6s;
+                    transition: opacity .6s;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        bottom: 100%;
+                        left: 50%;
+                        margin-left: -5px;
+                        -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+                        box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+                        border-width: 5px;
+                        border-style: solid;
+                        border-color: transparent transparent #fff transparent;
+                    }
+
+
+
+
+
+
+                    }
+                
+
+                &:hover {
+
+                    span {
+                        display: block;
+                    }
                 }
             }
         }

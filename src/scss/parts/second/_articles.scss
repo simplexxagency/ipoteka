@@ -354,6 +354,17 @@
         &__container {
             margin-top: 32px;
         }
+
+        &__img {
+
+            &-rightwrap {
+                flex-direction: column;
+            }
+
+            &-leftwrap {
+                flex-direction: column;
+            }
+        }
     }
 }
      

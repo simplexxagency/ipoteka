@@ -6,11 +6,13 @@
     }
 
     &__img {
+        max-height: 424px;
+        overflow: hidden;
 
-        img {
-            max-height: 424px;
-            object-fit: cover;
-        }
+        // img {
+            
+        //     object-fit: cover;
+        // }
     }
 }
 
