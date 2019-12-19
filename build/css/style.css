@@ -124,7 +124,6 @@ body, html {
   padding: 0 !important;
   height: auto;
   min-height: 100vh;
-  overflow-x: hidden;
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1608,6 +1607,8 @@ label.input_error {
       font-size: 16px;
       line-height: 20px;
       color: rgba(255, 255, 255, 0.7); }
+      .footer__main-item li a:hover {
+        color: #FEDF01; }
     .footer__main-itemsmall {
       margin-right: 50px; }
     .footer__main-media {
