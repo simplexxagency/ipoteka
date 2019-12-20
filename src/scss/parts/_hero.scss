@@ -220,15 +220,29 @@
             display: flex;
         }
 
+        &-wrap {
+            display: none;
+            position: absolute;
+            padding-top: 10px;
+            left: -30%;
+        }
+
         &-item {
             flex-shrink: 0;
             position: relative;
 
+            &:hover {
+
+                .hero__main-wrap {
+                    display: block;
+                }
+            }
+
             .hero__main-submenu {
-                display: none;
-                position: absolute;
-                top: 40px;
-                left: -7%;
+                display: block;
+                position: relative;
+                // top: 40px;
+                // left: -7%;
                 padding: 24px;
                 background: #FFFFFF;
                 border: 1px solid #E8ECEF;
