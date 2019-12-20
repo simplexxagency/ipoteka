@@ -15,6 +15,42 @@ $('.header__search-input').keyup(resizeInput).each(resizeInput);
     $(this).closest('.hero__mobile-item').toggleClass('active');
   });
 
+  // Mobile submenu in header
+  $(document).mouseup(function(e) {
+    let $headerMenuItem = $('.header__nav-link');
+    if (!($headerMenuItem.is(e.target))) {
+      $('.header__nav-item').removeClass('active');
+    } else {
+      if (!($('.header__nav-item').hasClass('active'))) {
+        $(e.target).closest('.header__nav-item').toggleClass('active');
+      } else {
+        $('.header__nav-item').removeClass('active');
+      }
+    }
+  });
+
+  // Menu in Hero
+  $(document).mouseup(function(e) {
+    let $heroMenuItem = $('.hero__main-link');
+    if (!($heroMenuItem.is(e.target))) {
+      $('.hero__main-item').removeClass('active');
+    } else {
+      if (!($('.hero__main-item').hasClass('active'))) {
+        $(e.target).closest('.hero__main-item').toggleClass('active');
+      } else {
+        $('.hero__main-item').removeClass('active');
+      }
+    }
+  });
+  // $('.header__nav-item a').on('click', function() {
+  //   if (!($('.header__nav-item').hasClass('active'))) {
+  //     $(this).closest('.header__nav-item').toggleClass('active');
+  //   } else {
+  //     $('.header__nav-item').removeClass('active');
+  //   }
+    
+  // });
+
   // Form Mask
   jQuery(function ($) {
     $('#phone').mask('+9 (999) 999-9999');

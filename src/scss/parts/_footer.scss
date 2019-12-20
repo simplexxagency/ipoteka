@@ -205,6 +205,13 @@
 
             &-item {
                 margin-bottom: 11px;
+                display: flex;
+                justify-content: center;
+            }
+
+            &-bottom {
+                position: relative;
+                left: 5px;
             }
         }
 
@@ -233,8 +240,16 @@
         &__cities {
             padding: 0 15px 64px;
 
+            &-bottom {
+                left: 4px;
+            }
+
             li {
                 font-size: 14px;
+
+                &:after {
+                    top: 2px;
+                }
             }
         }
 
