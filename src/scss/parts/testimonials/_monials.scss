@@ -28,8 +28,13 @@
     }
 
     &__button {
-        display: flex;
-        justify-content: center;
+        
+        display: none;
+
+        &.active {
+            display: flex;
+            justify-content: center;
+        }
 
         a {
             padding: 15px 54px;

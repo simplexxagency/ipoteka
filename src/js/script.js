@@ -377,6 +377,7 @@ $('.header__search-input').keyup(resizeInput).each(resizeInput);
   
   $('.monials__button a').on('click', function() {
     $('.monials__item-fade').toggleClass('active');
+    $('.monials__button').removeClass('active');
   });
 
   

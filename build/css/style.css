@@ -2724,12 +2724,14 @@ label.input_error {
     .monials__box > div {
       margin-bottom: 32px; }
   .monials__button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    display: none; }
+    .monials__button.active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
     .monials__button a {
       padding: 15px 54px;
       text-transform: uppercase; }
