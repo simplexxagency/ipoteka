@@ -12,7 +12,6 @@ $('.header__search-input').keyup(resizeInput).each(resizeInput);
 
   // Mobile submenu in header
   $('.hero__mobile-item a').on('click', function() {
-    console.log('qq');
     $(this).closest('.hero__mobile-item').toggleClass('active');
   });
 
@@ -338,6 +337,12 @@ $('.header__search-input').keyup(resizeInput).each(resizeInput);
     
   });
 
+  // Toggle class in section Monials
+  
+  $('.monials__button a').on('click', function() {
+    $('.monials__item-fade').toggleClass('active');
+  });
+
   
     // Pagination on page Video
     function simpleTemplating(data) {
@@ -359,4 +364,6 @@ $('.header__search-input').keyup(resizeInput).each(resizeInput);
         // $('#data-container').html(html);
     }
 });
+
+
 });

@@ -2612,3 +2612,44 @@ label.input_error {
     flex-wrap: wrap; }
   .b-blog .pagination .paginationjs-page {
     margin-bottom: 10px; } }
+
+.monials {
+  padding: 64px 0 80px;
+  background: #F2F4F5; }
+  .monials__title {
+    font-size: 40px;
+    letter-spacing: -0.02em; }
+    .monials__title-wrap {
+      margin-bottom: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .monials__line {
+    margin-bottom: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .monials__box {
+    margin-bottom: 8px; }
+    .monials__box > div {
+      margin-bottom: 32px; }
+  .monials__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .monials__button a {
+      padding: 15px 54px;
+      text-transform: uppercase; }
+  .monials__item-fade {
+    display: none; }
+    .monials__item-fade.active {
+      display: block; }

@@ -1,0 +1,50 @@
+.monials {
+    padding: 64px 0 80px;
+    background: #F2F4F5;
+
+    &__title {
+        font-size: 40px;
+        letter-spacing: -0.02em;
+
+        &-wrap {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__line {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        margin-bottom: 8px;
+
+        &>div {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+
+        a {
+            padding: 15px 54px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__item {
+
+        &-fade {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
