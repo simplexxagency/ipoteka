@@ -2200,9 +2200,6 @@ label.input_error {
       -webkit-filter: brightness(0) saturate(100%) invert(69%) sepia(97%) saturate(458%) hue-rotate(3deg) brightness(109%) contrast(99%);
       filter: brightness(0) saturate(100%) invert(69%) sepia(97%) saturate(458%) hue-rotate(3deg) brightness(109%) contrast(99%); }
     .contact__media-list a:hover img {
-      -webkit-transition: all ease 0.5s;
-      -o-transition: all ease 0.5s;
-      transition: all ease 0.5s;
       -webkit-filter: brightness(0) saturate(100%) invert(47%) sepia(90%) saturate(5282%) hue-rotate(186deg) brightness(90%) contrast(84%);
       filter: brightness(0) saturate(100%) invert(47%) sepia(90%) saturate(5282%) hue-rotate(186deg) brightness(90%) contrast(84%); }
   .contact__form {
