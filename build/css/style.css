@@ -2335,8 +2335,8 @@ label.input_error {
       -o-transition: font-size ease .3s;
       transition: font-size ease .3s; }
     .contact__bottom-item input[type=radio]:checked + label:before {
-      font-size: 5px;
-      text-align: center; }
+      background: url("../../../img/dot_PNG4.png") 50% 50% no-repeat;
+      background-size: 75%; }
     .contact__bottom-item select {
       padding: 14px;
       width: 100%;

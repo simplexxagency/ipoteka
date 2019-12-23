@@ -248,8 +248,8 @@
                 transition: font-size ease .3s;
             }
             input[type=radio]:checked + label:before {
-                font-size: 5px;  
-                text-align: center;  
+                background: url('../../../img/dot_PNG4.png') 50% 50% no-repeat;
+                background-size: 75%;  
             }
     
             select {
