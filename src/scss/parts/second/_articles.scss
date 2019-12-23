@@ -331,6 +331,33 @@
            }
        }
    }
+
+   &__img {
+       
+    &-center {
+        width: 100%;
+    }
+
+    &-rightwrap {
+        flex-direction: column-reverse;
+    }
+
+    &-right {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    &-leftwrap {
+        flex-direction: column;
+    }
+
+    &-left {
+        padding: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+   }
 }
 }
 
