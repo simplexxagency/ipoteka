@@ -2736,3 +2736,7 @@ label.input_error {
     display: none; }
     .monials__item-fade.active {
       display: block; }
+
+@media all and (max-width: 1199px) {
+  .monials {
+    padding: 120px 0 80px; } }
