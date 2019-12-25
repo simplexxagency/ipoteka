@@ -196,7 +196,8 @@ label.input_error {
   font-size: 14px;
   display: inline-block;
   padding: 5px;
-  background: #157BC0;
+  color: #20262D !important;
+  background: #FEDF01;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 2px; }
   label.input_error:before {
@@ -209,7 +210,7 @@ label.input_error {
     box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #157BC0 transparent; }
+    border-color: transparent transparent #FEDF01 transparent; }
 
 @media all and (max-width: 577px) {
   .title {
