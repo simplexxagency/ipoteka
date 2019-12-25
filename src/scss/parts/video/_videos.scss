@@ -71,12 +71,32 @@
             font-size: 24px;
             line-height: 32px;
             letter-spacing: -0.03em;
+            min-height: 64px;
         }
 
         &-text {
-            font-weight: 300;
+            
             font-size: 17px;
             line-height: 26px;
+            max-height: 100px;
+            overflow: hidden;
+
+            p {
+                font-weight: 300;
+            }
+
+            &:hover {
+                overflow: unset;
+                position: relative;
+                
+                p {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    background-color: #fff;
+                }
+            }
         }
     }
 
