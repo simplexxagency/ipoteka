@@ -2502,17 +2502,17 @@ label.input_error {
     line-height: 26px;
     max-height: 100px;
     overflow: hidden; }
-    .videos__box-text p {
-      font-weight: 300; }
-    .videos__box-text:hover {
+    .videos__box-text.active {
       overflow: unset;
-      position: relative; }
-      .videos__box-text:hover p {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        background-color: #fff; }
+      max-height: unset; }
+    .videos__box-text p {
+      font-weight: 300;
+      display: none; }
+      .videos__box-text p.active {
+        display: block; }
+  .videos__box-dots {
+    cursor: pointer;
+    color: #157BC0; }
   .videos .pagination__box {
     width: 100%;
     display: -webkit-box;

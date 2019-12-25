@@ -380,6 +380,36 @@ $('.header__search-input').keyup(resizeInput).each(resizeInput);
     $('.monials__button').removeClass('active');
   });
 
+  // $(document).mouseup(function(e) {
+    //   let $heroMenuItem = $('.hero__main-link');
+    //   if (!($heroMenuItem.is(e.target))) {
+    //     $('.hero__main-item').removeClass('active');
+    //   } else {
+    //     if (!($('.hero__main-item').hasClass('active'))) {
+    //       $(e.target).closest('.hero__main-item').toggleClass('active');
+    //     } else {
+    //       $('.hero__main-item').removeClass('active');
+    //     }
+    //   }
+    // });
+
+  // Full text in Video
+  let $dots = $('.videos__box-dots');
+  let $parentText = $('.videos__box-text');
+
+  $(document).mouseup( function(e) {
+    let mouseTarget = e.target;
+    if (!($dots.is(e.target))) {
+      $('.videos__part-text').addClass('active');
+      $('.videos__box-fulltext').removeClass('active');
+      $parentText.removeClass('active');
+    } 
+  });
+
+  $dots.on('click', function() {
+    $(this).closest($parentText).addClass('active').find('p').toggleClass('active');
+  });
+
   
     // Pagination on page Video
     function simpleTemplating(data) {
