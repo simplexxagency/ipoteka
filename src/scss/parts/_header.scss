@@ -16,6 +16,21 @@
             transition: opacity ease 2s;
             animation: opacity ease 1s;
         }
+
+        a.header__top-link {
+            display: block;
+            padding: 15px 66px;
+            font-size: 14px;
+            white-space: nowrap;
+            color: #ffffff;
+            background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
+    
+            &:hover {
+                background: $color-blue;
+                color: #fff;
+            }
+            
+        }
     }
     
     
@@ -164,7 +179,6 @@
         padding: 15px 66px;
         font-size: 14px;
         color: #ffffff;
-       
         background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
     }
 
@@ -364,6 +378,20 @@
                         display: block;
                     }
                 }
+            }
+        }
+    }
+
+    
+}
+
+@media all and (max-width: 1199px) {
+    .header {
+
+        &-main {
+
+            &.active {
+                display: none;
             }
         }
     }

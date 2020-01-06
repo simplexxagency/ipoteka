@@ -86,20 +86,7 @@
         }
     }
 
-    a.header__top-link {
-        display: block;
-        padding: 15px 66px;
-        font-size: 14px;
-        white-space: nowrap;
-        color: #ffffff;
-        background: linear-gradient(270deg, #42ABE0 0%, #157BC0 100%);
-
-        &:hover {
-            background: $color-blue;
-            color: #fff;
-        }
-        
-    }
+    
 
     &__lang {
         position: relative;
@@ -423,7 +410,7 @@
             align-items: center;
             flex-wrap: wrap;
             padding: 0 15px;
-            background-color: rgba(255, 255, 255, 0.97);
+            background-color: rgba(255, 255, 255, 1);
         }
 
         &-logo {
